@@ -1,0 +1,2120 @@
+fileFormatVersion: 2
+guid: 3a028948601c39841b9545426c1d3fdb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6218617617393635247
+    second: New_PD_portraits_0
+  - first:
+      213: -4869144771175695833
+    second: New_PD_portraits_1
+  - first:
+      213: -1258193658064099810
+    second: New_PD_portraits_2
+  - first:
+      213: -8974912353185684749
+    second: New_PD_portraits_3
+  - first:
+      213: 3044817460761135103
+    second: New_PD_portraits_4
+  - first:
+      213: -1119936143096003369
+    second: New_PD_portraits_5
+  - first:
+      213: -9082252955139493631
+    second: New_PD_portraits_6
+  - first:
+      213: 3022843364896617639
+    second: New_PD_portraits_7
+  - first:
+      213: -2789274246653890996
+    second: New_PD_portraits_8
+  - first:
+      213: 3687706752320539367
+    second: New_PD_portraits_9
+  - first:
+      213: 6560334263532692464
+    second: New_PD_portraits_10
+  - first:
+      213: 8900165710569512659
+    second: New_PD_portraits_11
+  - first:
+      213: -2041631320813535104
+    second: New_PD_portraits_12
+  - first:
+      213: -939121948662615364
+    second: New_PD_portraits_13
+  - first:
+      213: -3855068825283544793
+    second: New_PD_portraits_14
+  - first:
+      213: -1655337003910090362
+    second: New_PD_portraits_15
+  - first:
+      213: 2671703323380895027
+    second: New_PD_portraits_16
+  - first:
+      213: -4231061331028270746
+    second: New_PD_portraits_17
+  - first:
+      213: -5030113095037098516
+    second: New_PD_portraits_18
+  - first:
+      213: 8388574611514830516
+    second: New_PD_portraits_19
+  - first:
+      213: 3880375017052186457
+    second: New_PD_portraits_20
+  - first:
+      213: -8864545026174852419
+    second: New_PD_portraits_21
+  - first:
+      213: -7384490229689728954
+    second: New_PD_portraits_22
+  - first:
+      213: 521430502623069294
+    second: New_PD_portraits_23
+  - first:
+      213: -1333933692986161336
+    second: New_PD_portraits_24
+  - first:
+      213: -2593939906915760846
+    second: New_PD_portraits_25
+  - first:
+      213: 2836354127080788256
+    second: New_PD_portraits_26
+  - first:
+      213: 43880653010538561
+    second: New_PD_portraits_27
+  - first:
+      213: 1322648929693976520
+    second: New_PD_portraits_28
+  - first:
+      213: 3360067748008318304
+    second: New_PD_portraits_29
+  - first:
+      213: 7055049573880365850
+    second: New_PD_portraits_30
+  - first:
+      213: 6527874431679820304
+    second: New_PD_portraits_31
+  - first:
+      213: 5781730018560470284
+    second: New_PD_portraits_32
+  - first:
+      213: 7173282905467540783
+    second: New_PD_portraits_33
+  - first:
+      213: -6853086173188996991
+    second: New_PD_portraits_34
+  - first:
+      213: -7798927098556101276
+    second: New_PD_portraits_35
+  - first:
+      213: -5106422561702616895
+    second: New_PD_portraits_36
+  - first:
+      213: -5366914756427628817
+    second: New_PD_portraits_37
+  - first:
+      213: -4559296789728563639
+    second: New_PD_portraits_38
+  - first:
+      213: -4020081076286461619
+    second: New_PD_portraits_39
+  - first:
+      213: -1106502438218351354
+    second: New_PD_portraits_40
+  - first:
+      213: -2756211726383814835
+    second: New_PD_portraits_41
+  - first:
+      213: 6642503348917913634
+    second: New_PD_portraits_42
+  - first:
+      213: -5171582630076461241
+    second: New_PD_portraits_43
+  - first:
+      213: 8095389617416744427
+    second: New_PD_portraits_44
+  - first:
+      213: -773154472693315606
+    second: New_PD_portraits_45
+  - first:
+      213: -3966153737214182302
+    second: New_PD_portraits_46
+  - first:
+      213: 4153122369396643740
+    second: New_PD_portraits_47
+  - first:
+      213: 5284758348170941268
+    second: New_PD_portraits_48
+  - first:
+      213: -6300301107181011691
+    second: New_PD_portraits_49
+  - first:
+      213: -1412114778282997267
+    second: New_PD_portraits_50
+  - first:
+      213: -6850894383447386139
+    second: New_PD_portraits_51
+  - first:
+      213: -3487421364844716341
+    second: New_PD_portraits_52
+  - first:
+      213: -6347373965512175142
+    second: New_PD_portraits_53
+  - first:
+      213: 684217830558155621
+    second: New_PD_portraits_54
+  - first:
+      213: 1826090548167614335
+    second: New_PD_portraits_55
+  - first:
+      213: 3452438445540654152
+    second: New_PD_portraits_56
+  - first:
+      213: 1588665538077619791
+    second: New_PD_portraits_57
+  - first:
+      213: 5135376117924498142
+    second: New_PD_portraits_58
+  - first:
+      213: 8375630018620768792
+    second: New_PD_portraits_59
+  - first:
+      213: 4049635191514335814
+    second: New_PD_portraits_60
+  - first:
+      213: 6245150330336359885
+    second: New_PD_portraits_61
+  - first:
+      213: -7146610774327716271
+    second: New_PD_portraits_62
+  - first:
+      213: 6986060163861572991
+    second: New_PD_portraits_63
+  - first:
+      213: -7064845797889650096
+    second: New_PD_portraits_64
+  - first:
+      213: 2056282881994959987
+    second: New_PD_portraits_65
+  - first:
+      213: -4618480836312468296
+    second: New_PD_portraits_66
+  - first:
+      213: -6899074619479071499
+    second: New_PD_portraits_67
+  - first:
+      213: 842843995842926987
+    second: New_PD_portraits_68
+  - first:
+      213: -6727312150327990722
+    second: New_PD_portraits_69
+  - first:
+      213: -6807109686494845860
+    second: New_PD_portraits_70
+  - first:
+      213: -5964416764322171344
+    second: New_PD_portraits_71
+  - first:
+      213: 633301744758880175
+    second: New_PD_portraits_74
+  - first:
+      213: -944192508912777644
+    second: New_PD_portraits_75
+  - first:
+      213: -2321435690126123625
+    second: New_PD_portraits_76
+  - first:
+      213: 8502618428049273638
+    second: New_PD_portraits_77
+  - first:
+      213: -7347236790940797406
+    second: New_PD_portraits_78
+  - first:
+      213: -6596880821675866650
+    second: New_PD_portraits_79
+  - first:
+      213: 7460826915217756517
+    second: New_PD_portraits_80
+  - first:
+      213: 3892021511349536606
+    second: New_PD_portraits_81
+  - first:
+      213: 4848626456209129789
+    second: New_PD_portraits_82
+  - first:
+      213: -405589641971721293
+    second: New_PD_portraits_84
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: New_PD_portraits_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1503441893803b9a0800000000000000
+      internalID: -6218617617393635247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a3f12e0a25d6cb0800000000000000
+      internalID: -4869144771175695833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_2
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16a070c88ff98ee0800000000000000
+      internalID: -1258193658064099810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f22a1214c4b27380800000000000000
+      internalID: -8974912353185684749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_4
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff70392395d514a20800000000000000
+      internalID: 3044817460761135103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_5
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d444a3f2003570f0800000000000000
+      internalID: -1119936143096003369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_6
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1013ba0ae0b55f180800000000000000
+      internalID: -9082252955139493631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_7
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a43f40560c43f920800000000000000
+      internalID: 3022843364896617639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_8
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1885
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eac03d9d18a49d0800000000000000
+      internalID: -2789274246653890996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea00efb0cd5d2330800000000000000
+      internalID: 3687706752320539367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3a0b9214dfa0b50800000000000000
+      internalID: 6560334263532692464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_11
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de9b940f8db38b70800000000000000
+      internalID: 8900165710569512659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800998712baaa3e0800000000000000
+      internalID: -2041631320813535104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_13
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb23139309197f2f0800000000000000
+      internalID: -939121948662615364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_14
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729ba44145b008ac0800000000000000
+      internalID: -3855068825283544793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_15
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681316ae3cf0709e0800000000000000
+      internalID: -1655337003910090362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_16
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d495f640cc31520800000000000000
+      internalID: 2671703323380895027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_17
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1670
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6612b25f2204845c0800000000000000
+      internalID: -4231061331028270746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5e54e6ac2713ab0800000000000000
+      internalID: -5030113095037098516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bea3332a243a6470800000000000000
+      internalID: 8388574611514830516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_20
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95722b6d48cd9d530800000000000000
+      internalID: 3880375017052186457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_21
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2646bd34fcaf480800000000000000
+      internalID: -8864545026174852419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_22
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6404004c245058990800000000000000
+      internalID: -7384490229689728954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_23
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64c6eb874e7c3700800000000000000
+      internalID: 521430502623069294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_24
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84782abaf5aec7de0800000000000000
+      internalID: -1333933692986161336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_25
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235839fd569700cd0800000000000000
+      internalID: -2593939906915760846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_26
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1455
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0211dd90d01cc5720800000000000000
+      internalID: 2836354127080788256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140943fa835eb9000800000000000000
+      internalID: 43880653010538561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_28
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7c5f0a13efa5210800000000000000
+      internalID: 1322648929693976520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_29
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065584d70db51ae20800000000000000
+      internalID: 3360067748008318304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_30
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1309eb453298e160800000000000000
+      internalID: 7055049573880365850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_31
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01271ae953ba79a50800000000000000
+      internalID: 6527874431679820304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_32
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d6287a1d4dc3050800000000000000
+      internalID: 5781730018560470284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_33
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2556cdfbce9c8360800000000000000
+      internalID: 7173282905467540783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_34
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180cde74f62f4e0a0800000000000000
+      internalID: -6853086173188996991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_35
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1240
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d4565df15a4c390800000000000000
+      internalID: -7798927098556101276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0eca03cb75229b0800000000000000
+      internalID: -5106422561702616895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_37
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee3453d673e485b0800000000000000
+      internalID: -5366914756427628817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_38
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e66a6d9bf1ab0c0800000000000000
+      internalID: -4559296789728563639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_39
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49eca77f8dc538c0800000000000000
+      internalID: -4020081076286461619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_40
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d34ea15e9e4a0f0800000000000000
+      internalID: -1106502438218351354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_41
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d476023b908ffb9d0800000000000000
+      internalID: -2756211726383814835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_42
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22848933a99ee2c50800000000000000
+      internalID: 6642503348917913634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_43
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f46b78ff8da38b0800000000000000
+      internalID: -5171582630076461241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_44
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 1025
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beda28047f9985070800000000000000
+      internalID: 8095389617416744427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_45
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae74c9a7a143545f0800000000000000
+      internalID: -773154472693315606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cb2c8803465f8c0800000000000000
+      internalID: -3966153737214182302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_47
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c979d907acad2a930800000000000000
+      internalID: 4153122369396643740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_48
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4535282c7bb375940800000000000000
+      internalID: 5284758348170941268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_49
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51db9700685d098a0800000000000000
+      internalID: -6300301107181011691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_50
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9cc524719276ce0800000000000000
+      internalID: -1412114778282997267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_51
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e756e81bdbbce0a0800000000000000
+      internalID: -6850894383447386139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_52
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce925eeeb03a9fc0800000000000000
+      internalID: -3487421364844716341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_53
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 810
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad19519120999e7a0800000000000000
+      internalID: -6347373965512175142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_54
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5634863ed74de7900800000000000000
+      internalID: 684217830558155621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f9a33bda3975910800000000000000
+      internalID: 1826090548167614335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c3a53797689ef20800000000000000
+      internalID: 3452438445540654152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_57
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f467508c3e21c0610800000000000000
+      internalID: 1588665538077619791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_58
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda0ae0fe55844740800000000000000
+      internalID: 5135376117924498142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_59
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124dfd30273c3470800000000000000
+      internalID: 8375630018620768792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_60
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a022430c1333830800000000000000
+      internalID: 4049635191514335814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_61
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5bc90232b3ba650800000000000000
+      internalID: 6245150330336359885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_62
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 595
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15697387d5322dc90800000000000000
+      internalID: -7146610774327716271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_63
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7de97e84b873f060800000000000000
+      internalID: 6986060163861572991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_64
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05250ef8d20a4fd90800000000000000
+      internalID: -7064845797889650096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_65
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ca603f262698c10800000000000000
+      internalID: 2056282881994959987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_66
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b475ad262cd7efb0800000000000000
+      internalID: -4618480836312468296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_67
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4690bbf209140a0800000000000000
+      internalID: -6899074619479071499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_68
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d94d062262bb00800000000000000
+      internalID: 842843995842926987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_69
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36e78afd39c3a2a0800000000000000
+      internalID: -6727312150327990722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_70
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54aa554ec94881a0800000000000000
+      internalID: -6807109686494845860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_71
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 380
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036313ebd822a3da0800000000000000
+      internalID: -5964416764322171344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_74
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 166
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7fcfbd490f9c800800000000000000
+      internalID: 633301744758880175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_75
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 165
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4564baa6aed85e2f0800000000000000
+      internalID: -944192508912777644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_76
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 165
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d5e111a8a98cfd0800000000000000
+      internalID: -2321435690126123625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_77
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 165
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6233198596e5ff570800000000000000
+      internalID: 8502618428049273638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_78
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 165
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226fa43e01f590a90800000000000000
+      internalID: -7347236790940797406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_79
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 165
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e54c6e28db2374a0800000000000000
+      internalID: -6596880821675866650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_80
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 158
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5615a3cdc8e2a8760800000000000000
+      internalID: 7460826915217756517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_81
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 129
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e570b2a91fc330630800000000000000
+      internalID: 3892021511349536606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_82
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 67
+        width: 286
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3108e2a218c94340800000000000000
+      internalID: 4848626456209129789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New_PD_portraits_84
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 32
+        width: 373
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb92b99e5e0f5af0800000000000000
+      internalID: -405589641971721293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 076ebd0991370b54bbe1da1866bb1560
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

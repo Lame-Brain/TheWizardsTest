@@ -1,0 +1,1616 @@
+fileFormatVersion: 2
+guid: 35111982e3333334bae75752508b5649
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4051040311390835092
+    second: Light_Torch_lit
+  - first:
+      213: 8721846730289168443
+    second: Armor_Pants
+  - first:
+      213: -6684517119717730805
+    second: Weapon_Axe1
+  - first:
+      213: 7881973784218416107
+    second: Weapon_Axe2
+  - first:
+      213: -6263245113596841693
+    second: Gem_Diamond
+  - first:
+      213: 4979221875916608320
+    second: Weapon_Staff1
+  - first:
+      213: 298349014561444562
+    second: Clothing_Boots1
+  - first:
+      213: -5188482902061955383
+    second: Weapon_Sword1
+  - first:
+      213: -8475862831829657170
+    second: Armor_Chain
+  - first:
+      213: 5641925424141896730
+    second: Clothing_Cloak
+  - first:
+      213: 3664236619275743948
+    second: Weapon_Staff2
+  - first:
+      213: -8952791195967047184
+    second: Jewelry_Ring1
+  - first:
+      213: -4688291239838964425
+    second: Jewelry_Amulet1
+  - first:
+      213: -897061538623375689
+    second: Gem_Emerald
+  - first:
+      213: -3856799466100669304
+    second: Jewelry_Amulet2
+  - first:
+      213: 7526038815977120041
+    second: Weapon_MorningStar
+  - first:
+      213: -7815826302180273799
+    second: Weapon_Mace
+  - first:
+      213: 8100378175938129147
+    second: Jewelry_Amulet3
+  - first:
+      213: 4962410575597021771
+    second: Light_Lantern_unlit
+  - first:
+      213: -835144936736336772
+    second: Armor_Leather
+  - first:
+      213: 8390380491745559888
+    second: Armor_Boots
+  - first:
+      213: -7626044444008668066
+    second: Armor_Helm1
+  - first:
+      213: 2502775433185840950
+    second: Armor_Pants2
+  - first:
+      213: -6650676536094450945
+    second: Weapon_Dagger
+  - first:
+      213: 4408496358149469651
+    second: Clothing_Hat1
+  - first:
+      213: 8257789340290123528
+    second: Weapon_Dagger2
+  - first:
+      213: 8283566063070183208
+    second: Clothing_Hat2
+  - first:
+      213: -6150998274263573494
+    second: Misc_Potion1
+  - first:
+      213: -671095778232358224
+    second: Jewelry_Ring2
+  - first:
+      213: -7445040719190425347
+    second: Weapon_Sword2
+  - first:
+      213: 474943414983745256
+    second: Jewelry_Ring3
+  - first:
+      213: -4309522174060952372
+    second: Clothing_Robe
+  - first:
+      213: 4267513475184870046
+    second: Misc_Potion2
+  - first:
+      213: -5990866592260385956
+    second: Weapon_Shield1
+  - first:
+      213: 7431607921354895922
+    second: Gem_Ruby
+  - first:
+      213: -7299604913071096677
+    second: Weapon_Sabre
+  - first:
+      213: -9157849585166435644
+    second: Weapon_Axe3
+  - first:
+      213: -748304777945034578
+    second: Weapon_Shield2
+  - first:
+      213: 3093933704343086873
+    second: Clothing_Shirt
+  - first:
+      213: 380165609391948218
+    second: SNAKETOTEM
+  - first:
+      213: -2637103305264502546
+    second: Clothing_Shoes
+  - first:
+      213: -154815918056899098
+    second: Misc_Potion3
+  - first:
+      213: 4986756533862962192
+    second: Misc_Potion4
+  - first:
+      213: -5590797274239128334
+    second: Weapon_Dagger3
+  - first:
+      213: -6798538287987852361
+    second: Weapon_Hammer1
+  - first:
+      213: -8347418263435435611
+    second: Clothing_Hat3
+  - first:
+      213: -8568445217324140013
+    second: Light_Torch_unlit
+  - first:
+      213: -8918246324734345380
+    second: Jewelry_Amulet4
+  - first:
+      213: 4615765753972197863
+    second: Clothing_Pants
+  - first:
+      213: 830054648362763329
+    second: COIN
+  - first:
+      213: -4642813833574795030
+    second: Weapon_Shield3
+  - first:
+      213: -4209526883156003536
+    second: Weapon_Axe4
+  - first:
+      213: -879552390263688183
+    second: Weapon_Hammer2
+  - first:
+      213: 4110293532232359485
+    second: Weapon_Whip
+  - first:
+      213: -3289584774344345633
+    second: Weapon_Staff3
+  - first:
+      213: 3341121267189636062
+    second: Weapon_Club
+  - first:
+      213: 8588389928684770734
+    second: Light_Lantern_lit
+  - first:
+      213: 167942224451385689
+    second: Armor_Helm2
+  - first:
+      213: 4695226833979113470
+    second: Armor_Helm3
+  - first:
+      213: -7694503040707147271
+    second: Armor_Scale
+  - first:
+      213: 3187436517861829068
+    second: Armor_Chestplate
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Armor_Pants
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4263
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30c94014693a0970800000000000000
+      internalID: 8721846730289168443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Axe1
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 4263
+        width: 517
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0615308813db33a0800000000000000
+      internalID: -6684517119717730805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Axe2
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 4263
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3b7417565626d60800000000000000
+      internalID: 7881973784218416107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem_Diamond
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 4263
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321fbd6d0cb7419a0800000000000000
+      internalID: -6263245113596841693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Staff1
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 4263
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0431dd34aefb91540800000000000000
+      internalID: 4979221875916608320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Boots1
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 4269
+        width: 515
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2d50819d2f32400800000000000000
+      internalID: 298349014561444562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Sword1
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 4263
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c8635a4ecef7b0800000000000000
+      internalID: -5188482902061955383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Chain
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3739
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea95bd759afaf5a80800000000000000
+      internalID: -8475862831829657170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Cloak
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3739
+        width: 517
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c0933f7452c4e40800000000000000
+      internalID: 5641925424141896730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Staff2
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 3739
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2b8e09acbf9d230800000000000000
+      internalID: 3664236619275743948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Ring1
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 3739
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9b32857db41c380800000000000000
+      internalID: -8952791195967047184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Amulet1
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 3739
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735a2ddf4f7dfeeb0800000000000000
+      internalID: -4688291239838964425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem_Emerald
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 3739
+        width: 515
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b630b0984ffc83f0800000000000000
+      internalID: -897061538623375689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Amulet2
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 3739
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884472dd155e97ac0800000000000000
+      internalID: -3856799466100669304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_MorningStar
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 3218
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9212e10bd6cd17860800000000000000
+      internalID: 7526038815977120041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Mace
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 3218
+        width: 517
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971d360636b988390800000000000000
+      internalID: -7815826302180273799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Amulet3
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 3218
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc6e1b88035a6070800000000000000
+      internalID: 8100378175938129147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Lantern_unlit
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 3218
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a2a1460260ed440800000000000000
+      internalID: 4962410575597021771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Leather
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 3218
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c745dd5da18f864f0800000000000000
+      internalID: -835144936736336772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Boots
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 3218
+        width: 515
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0558cd46a9e907470800000000000000
+      internalID: 8390380491745559888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Helm1
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 3218
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54a5819bf8da2690800000000000000
+      internalID: -7626044444008668066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Pants2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2697
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fcd970ff4abb220800000000000000
+      internalID: 2502775433185840950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Dagger
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2697
+        width: 517
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa901e5dec04b3a0800000000000000
+      internalID: -6650676536094450945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Hat1
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 2697
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d53a1d94102e2d30800000000000000
+      internalID: 4408496358149469651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Dagger2
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2697
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807000247af899270800000000000000
+      internalID: 8257789340290123528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Hat2
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 2697
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f77c6327325f270800000000000000
+      internalID: 8283566063070183208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_Potion1
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 2697
+        width: 515
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c9a70b8a343aaa0800000000000000
+      internalID: -6150998274263573494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Ring2
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 2697
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba223002f9cfa6f0800000000000000
+      internalID: -671095778232358224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Sword2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2173
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0065259e6eda890800000000000000
+      internalID: -7445040719190425347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Ring3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 2173
+        width: 517
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee54820586579600800000000000000
+      internalID: 474943414983745256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Robe
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 2173
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc48d6f5a608134c0800000000000000
+      internalID: -4309522174060952372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_Potion2
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2173
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92469a35e0493b30800000000000000
+      internalID: 4267513475184870046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Shield1
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 2173
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c539097439a2cdca0800000000000000
+      internalID: -5990866592260385956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem_Ruby
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 2173
+        width: 515
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2327656b700622760800000000000000
+      internalID: 7431607921354895922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Sabre
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 2173
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c73bba10892ba90800000000000000
+      internalID: -7299604913071096677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Axe3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1652
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca32b99258c8e080800000000000000
+      internalID: -9157849585166435644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Shield2
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1652
+        width: 517
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0dbd6e4cc7d95f0800000000000000
+      internalID: -748304777945034578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Shirt
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1652
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9176afdcf4cdfea20800000000000000
+      internalID: 3093933704343086873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNAKETOTEM
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1652
+        width: 514
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab180a78b9e964500800000000000000
+      internalID: 380165609391948218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Shoes
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 1652
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee863bd0480276bd0800000000000000
+      internalID: -2637103305264502546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_Potion3
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1652
+        width: 515
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed74a62ebbf9ddf0800000000000000
+      internalID: -154815918056899098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misc_Potion4
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 1652
+        width: 516
+        height: 517
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014924685a4843540800000000000000
+      internalID: 4986756533862962192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Dagger3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1131
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc21c9108f7962b0800000000000000
+      internalID: -5590797274239128334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Hammer1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1131
+        width: 517
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb7790827db6a1a0800000000000000
+      internalID: -6798538287987852361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Hat3
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1131
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1a250e053082c80800000000000000
+      internalID: -8347418263435435611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Torch_unlit
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1131
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31affffe874c61980800000000000000
+      internalID: -8568445217324140013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jewelry_Amulet4
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 1131
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fb6c2f7360c3480800000000000000
+      internalID: -8918246324734345380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clothing_Pants
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1131
+        width: 515
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e90de37f7e7e0040800000000000000
+      internalID: 4615765753972197863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: COIN
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 1131
+        width: 516
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14403db0e42f48b00800000000000000
+      internalID: 830054648362763329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Shield3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 608
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae83183ca69619fb0800000000000000
+      internalID: -4642813833574795030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Axe4
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 608
+        width: 517
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03577015a91c495c0800000000000000
+      internalID: -4209526883156003536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Hammer2
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 608
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904bcf8d2c33bc3f0800000000000000
+      internalID: -879552390263688183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Whip
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 608
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e9b47b032ba0930800000000000000
+      internalID: 4110293532232359485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Staff3
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 608
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7fba2a31c0952d0800000000000000
+      internalID: -3289584774344345633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapon_Club
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 608
+        width: 515
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb575a271c0e5e20800000000000000
+      internalID: 3341121267189636062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Torch_lit
+      rect:
+        serializedVersion: 2
+        x: 3138
+        y: 608
+        width: 514
+        height: 518
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4911d3b23bf283830800000000000000
+      internalID: 4051040311390835092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_Lantern_lit
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 82
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea55ccb0327103770800000000000000
+      internalID: 8588389928684770734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Helm2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 82
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959b6373096a45200800000000000000
+      internalID: 167942224451385689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Helm3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 82
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efff43bddebc82140800000000000000
+      internalID: 4695226833979113470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Scale
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 80
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9cc7f6042a73590800000000000000
+      internalID: -7694503040707147271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor_Chestplate
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 79
+        width: 514
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9234f00ac0c3c20800000000000000
+      internalID: 3187436517861829068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fe4345035ecb9f643b1e100b0bd275c8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

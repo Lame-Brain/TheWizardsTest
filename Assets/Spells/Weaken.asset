@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad6ca8cf716934bb99679b812a4bad, type: 3}
+  m_Name: Weaken
+  m_EditorClassIdentifier: 
+  spellName: Weaken
+  spellLevel: 1
+  spellCost: 25
+  UseInExplore: 0
+  UseInBattle: 1
+  spellType: 4
+  spellTarget: 3
+  asleep: 0
+  cureAsleep: 0
+  bless: 0
+  curse: 0
+  heal: 0
+  harm: 0
+  paralyze: 0
+  cureParalyze: 0
+  poison: 0
+  curePoison: 0
+  regen: 0
+  strMod: 0
+  dexMod: 0
+  intMod: 0
+  wisMod: 0
+  chaMos: 0
+  healthMod: 0
+  manaMod: 0
+  enemy_init: 0
+  enemy_toHit: 0
+  enemy_minDamage: -1
+  enemy_maxDamage: -1
+  enemy_defense: -1
+  createLight: 0
+  unlock: 0
+  disarmTrap: 0
+  spellDescription: Divine energy saps the strength of the wicked.

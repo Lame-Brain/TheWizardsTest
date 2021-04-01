@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49ad6ca8cf716934bb99679b812a4bad, type: 3}
+  m_Name: DivineFavor
+  m_EditorClassIdentifier: 
+  spellName: Divine Favor
+  spellLevel: 2
+  spellCost: 35
+  UseInExplore: 1
+  UseInBattle: 0
+  spellType: 4
+  spellTarget: 0
+  asleep: 0
+  cureAsleep: 0
+  bless: 0
+  curse: 0
+  heal: 0
+  harm: 0
+  paralyze: 0
+  cureParalyze: 0
+  poison: 0
+  curePoison: 0
+  regen: 0
+  strMod: 0
+  dexMod: 0
+  intMod: 0
+  wisMod: 0
+  chaMos: 0
+  healthMod: 0
+  manaMod: 0
+  enemy_init: 0
+  enemy_toHit: 0
+  enemy_minDamage: 0
+  enemy_maxDamage: 0
+  enemy_defense: 0
+  createLight: 0
+  unlock: -20
+  disarmTrap: -20
+  spellDescription: The Divines smile on you, unlocking nearby locks and disarming
+    nearby traps.
