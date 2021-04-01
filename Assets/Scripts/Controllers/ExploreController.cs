@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿/* Added sounds for opening bags
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

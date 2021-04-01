@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*Added sound for use in battle and when doing splats and messages
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

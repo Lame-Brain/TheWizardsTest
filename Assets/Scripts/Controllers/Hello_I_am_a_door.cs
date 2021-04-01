@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Added sounds for opening and discovering that it is lcked. Need to be sure to add the right sound (metal or wood) to the appropriate door in Map Prefab
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

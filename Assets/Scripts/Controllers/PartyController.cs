@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Hardest was teh footstep sound. Had to set it in a coroutine so that it wont run over itslef, and I varied the pitch to make it more interesting.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

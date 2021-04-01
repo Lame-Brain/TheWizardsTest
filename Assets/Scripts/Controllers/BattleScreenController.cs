@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿/*Added sounds to battle Open. Battle close, Hit and Miss
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
