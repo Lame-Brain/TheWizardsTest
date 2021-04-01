@@ -20,10 +20,12 @@ public class TiefSkillIconController : MonoBehaviour, IPointerEnterHandler, IPoi
             }
             if (_interactionType == "LOCKED DOOR")
             {
+                GameManager.PARTY.ThiefToolSound.Play();
                 _interactionObj.GetComponent<Hello_I_am_a_door>().UnlockDoor();
             }
             if (_interactionType == "TRAP")
             {
+                GameManager.PARTY.ThiefToolSound.Play();
                 _interactionObj = GameManager.PARTY.FindMyNode(); //for some reason my previous call to Interact Object is not registering, so Fuck It. Here is the data direct from the source.
                 float dex = (GameManager.PARTY.PC[GameManager.EXPLORE.selected_Character].dexterity / 2) - 5;
                 float threshold = Random.Range(0, GameManager.RULES.RandomRange) + (_interactionObj.GetComponent<GridNode>().trapLevel * 10);

@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Material[] DungeonColorTextures;
     public Spell[] spells;
     public InventoryItem[] items;
+    public AudioSource PageSound, SplatSound, WhiffSound, VictorySound, BattleSound;
     public int SelectedSaveSlot;
 
     //Dynamic Level Controller data
@@ -114,6 +115,7 @@ public class GameManager : MonoBehaviour
 
     public static void Splash(string text, Color bg, Color tc, GameObject target)
     {
+        GameManager.GAME.SplatSound.Play();
         GameObject _go = Instantiate(EXPLORE.ref_Splash, target.transform);
         _go.GetComponent<Splash>().Show(text, bg, tc);
     }

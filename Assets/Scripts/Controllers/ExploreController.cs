@@ -20,6 +20,7 @@ public class ExploreController : MonoBehaviour
     public Sprite ref_bagSprite;
     public Text ref_darkwarningtext;
     public GameObject ref_SignPanel;
+    public AudioSource OpenBagSound;
 
     [Header("Other")]
     public bool movementPaused = false;
@@ -70,6 +71,7 @@ public class ExploreController : MonoBehaviour
 
     public void ClearAllScreens()
     {
+        OpenBagSound.Play();
         if (current_InventoryScreen != null) Destroy(current_InventoryScreen);
         if (current_CharacterSheetScreen != null) Destroy(current_CharacterSheetScreen);
         if (current_SpellCompendium != null) Destroy(current_SpellCompendium);

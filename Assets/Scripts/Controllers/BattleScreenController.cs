@@ -30,7 +30,8 @@ public class BattleScreenController : MonoBehaviour
         {
             go = Instantiate(ref_monsterPanelPF, ref_MPF.transform);
             enemySlot.Add(go);
-        }        
+        }
+        GameManager.GAME.BattleSound.Play();
         UpdatePlayerGUI();
         UpdateEnemyGUI();
         BuildIniativeOrder();
@@ -138,6 +139,7 @@ public class BattleScreenController : MonoBehaviour
         for (int _i = 0; _i < enemy.Count; _i++) if (enemy[_i].GetComponent<MonsterLogic>().wounds < enemy[_i].GetComponent<MonsterLogic>().health) _battleOver = false;
         if(_battleOver) //All monsters deadm, battle over, party wins
         {
+            GameManager.GAME.VictorySound.Play();
             EndBattle();
         }
 
@@ -354,6 +356,7 @@ public class BattleScreenController : MonoBehaviour
         }
         if (_attack <= _defense)
         {
+            GameManager.GAME.WhiffSound.Play();
             if (_defender.GetComponent<Character>() != null) //the defender is a hero
             {
                 ref_OutputText.text = "...but " + _attacker.GetComponent<MonsterLogic>().NPC_Name + " misses!";

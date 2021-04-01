@@ -7,6 +7,7 @@ public class Hello_I_am_a_door : MonoBehaviour
     public bool doorOpen, knownLocked;
     public float lockValue;
     public int IconIndex;
+    public AudioSource DoorSound, LockSound;
 
     private void Start()
     {
@@ -24,9 +25,14 @@ public class Hello_I_am_a_door : MonoBehaviour
         if (lockValue == 0)//Door is unlocked, open it.
         {
             doorOpen = true;
+            DoorSound.Play();
             transform.gameObject.SetActive(false);
         }
-        if (lockValue > 0 && !knownLocked) knownLocked = true;//Door is locked, but untried. Mark it as locked.
+        if (lockValue > 0 && !knownLocked)
+        {
+            LockSound.Play();
+            knownLocked = true;//Door is locked, but untried. Mark it as locked.
+        }
     }
 
     public void UnlockDoor()

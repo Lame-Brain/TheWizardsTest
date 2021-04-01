@@ -13,6 +13,7 @@ public class PartyController : MonoBehaviour
     public int magical_light = 0;
     public int x_coor, y_coor, face;
     public InventoryItem[] bagInventory = new InventoryItem[20]; //What is the party carrying?
+    public AudioSource Footsteps, trapSound1, trapsound2, spellSound, ThiefToolSound;
 
     //mapstuff
     public int[,] map = new int[18, 18];
@@ -40,6 +41,7 @@ public class PartyController : MonoBehaviour
     private int trapcheckonX = -100, trapcheckonY = -100;
     public int trapdamage = 0;
     public bool trapdark = false;
+    private bool playingFootsteps = false;    
 
     // Start is called before the first frame update
     void Start()
@@ -259,12 +261,22 @@ public class PartyController : MonoBehaviour
     {
         moving = true;
         actionQueue = i;
+        if (i == "UP" || i == "DOWN" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT") if (!playingFootsteps) StartCoroutine(PlayFootSteps());
 
         if (i == "UP" || i == "DOWN" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT" || i == "INTERACT") PassTurn();
 
         yield return new WaitForSecondsRealtime(n);
 
         moving = false;
+    }
+
+    IEnumerator PlayFootSteps()
+    {
+        playingFootsteps = true;
+        Footsteps.pitch = Random.Range(1f,3f);
+        Footsteps.Play();
+        yield return new WaitForSeconds(Footsteps.clip.length);
+        playingFootsteps = false;
     }
 
     public void TeleportToDungeonStart(string destination)
@@ -486,6 +498,7 @@ public class PartyController : MonoBehaviour
                     interactContext = "TRAP";
                     Interact_Object = FindMyNode();
                     MessageWindow.ShowMessage_Static("CLICK! A plate below you shifts as your party steps on it...");
+                    trapSound1.Play();
                 }
 
                 trapdamage = FindMyNode().GetComponent<GridNode>().trapDamage;
@@ -499,6 +512,7 @@ public class PartyController : MonoBehaviour
     {
         if (trapdamage > 0)
         {
+            trapsound2.Play();
             int damage = trapdamage;
             GameManager.Splash("-" + damage + "hp", Color.red, Color.white, GameManager.EXPLORE.pcSlot[0]);
             GameManager.Splash("-" + damage + "hp", Color.red, Color.white, GameManager.EXPLORE.pcSlot[1]);
@@ -513,6 +527,7 @@ public class PartyController : MonoBehaviour
         }
         if (trapdark) //Kills your light source
         {
+            spellSound.Play();
             for (int _i = 0; _i < 20; _i++)
                 if (bagInventory[_i] != null && bagInventory[_i].type == InventoryItem.equipType.light && bagInventory[_i].active) bagInventory[_i].currentDuration = 0;
             MessageWindow.ShowMessage_Static("You are plunged into darkness!");

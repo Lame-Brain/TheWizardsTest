@@ -24,6 +24,7 @@ public class MessageWindow : MonoBehaviour
 
     private void ShowMessage(string text)
     {
+        GameManager.GAME.PageSound.Play();
         gameObject.SetActive(true);
         MessageText.text = text;
         float textPaddingSize = 10f;
