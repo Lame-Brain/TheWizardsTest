@@ -11,6 +11,7 @@ public class MapPanel_Controller : MonoBehaviour
 
     private GameObject[,] maptile;
     private int n = 5;
+    private int deltaX = 0, deltaY = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class MapPanel_Controller : MonoBehaviour
                 maptile[x, y] = Instantiate(ref_mapTileEmptyPF, ref_mapPanel.transform);
                 maptile[x, y].transform.localPosition = new Vector2((x - n) * 25, (y - n) * 25);
             }
+        //int playerX = (int)((GameManager.PARTY.x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), playerY = (int)((GameManager.PARTY.y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), _px = playerX, _py = playerY;
         DrawMap();
     }
 
@@ -38,8 +40,8 @@ public class MapPanel_Controller : MonoBehaviour
 
         //now draw:
         GameObject _tgo;
-        int _px = (int)((GameManager.PARTY.x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), _py = (int)((GameManager.PARTY.y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
 
+        int playerX = (int)((GameManager.PARTY.x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), playerY = (int)((GameManager.PARTY.y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), _px = playerX+deltaX, _py = playerY+deltaY;
         for (int y = -n; y <= n; y++)
             for (int x = -n; x <= n; x++)
             {
@@ -159,17 +161,18 @@ public class MapPanel_Controller : MonoBehaviour
                         _tgo.GetComponent<Image>().sprite = ref_torchWall;
                         _tgo.transform.rotation = Quaternion.Euler(0, 0, 90);
                     }
-
+                    if(_px+x == playerX && _py+y == playerY)
+                    {
+                        _tgo = Instantiate(ref_tileImage, maptile[x+n, y+n].transform);
+                        _tgo.GetComponent<Image>().sprite = ref_player;
+                        _tgo.name = "PLAYER MARK";
+                        if (GameManager.PARTY.face == 0) _tgo.transform.rotation = Quaternion.Euler(0, 0, 0); //North
+                        if (GameManager.PARTY.face == 1) _tgo.transform.rotation = Quaternion.Euler(0, 0, 270); //East
+                        if (GameManager.PARTY.face == 2) _tgo.transform.rotation = Quaternion.Euler(0, 0, 180); //South
+                        if (GameManager.PARTY.face == 3) _tgo.transform.rotation = Quaternion.Euler(0, 0, 90); //West
+                    }
                 }
             }
-
-        _tgo = Instantiate(ref_tileImage, maptile[n, n].transform);
-        _tgo.GetComponent<Image>().sprite = ref_player;
-        _tgo.name = "PLAYER MARK";
-        if (GameManager.PARTY.face == 0) _tgo.transform.rotation = Quaternion.Euler(0, 0, 0); //North
-        if (GameManager.PARTY.face == 1) _tgo.transform.rotation = Quaternion.Euler(0, 0, 270); //East
-        if (GameManager.PARTY.face == 2) _tgo.transform.rotation = Quaternion.Euler(0, 0, 180); //South
-        if (GameManager.PARTY.face == 3) _tgo.transform.rotation = Quaternion.Euler(0, 0, 90); //West
     }
 
 
@@ -207,5 +210,15 @@ public class MapPanel_Controller : MonoBehaviour
     public void HideLeftArrowToolTip()
     {
         Tooltip.HideToolTip_Static();
+    }
+    public void MovePY(int value)
+    {
+        deltaY += value;
+        DrawMap();
+    }
+    public void MovePX(int value)
+    {
+        deltaX += value;
+        DrawMap();
     }
 }
