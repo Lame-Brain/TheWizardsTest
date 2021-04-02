@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class IntroScreenController : MonoBehaviour
 {
     public AudioSource hisssss;
@@ -11,7 +12,8 @@ public class IntroScreenController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = Random.Range(100f, 1500f);
+        GameManager.GAME.ToggleUI(false);
+        timer = Random.Range(100f, 1500f);        
     }
 
     // Update is called once per frame
@@ -23,5 +25,10 @@ public class IntroScreenController : MonoBehaviour
             timer = Random.Range(1000f, 15000f);
             hisssss.PlayOneShot(hisssss.clip, Random.Range(0f, .5f));
         }
+    }
+
+    public void PlayGame()
+    {
+        GameManager.GAME.ToggleUI(true);
     }
 }

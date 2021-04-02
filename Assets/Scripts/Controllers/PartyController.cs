@@ -15,7 +15,8 @@ public class PartyController : MonoBehaviour
     public int magical_light = 0;
     public int x_coor, y_coor, face;
     public InventoryItem[] bagInventory = new InventoryItem[20]; //What is the party carrying?
-    public AudioSource Footsteps, trapSound1, trapsound2, spellSound, ThiefToolSound, MetalDoorSound, WoodDoorSound, LockDoorSound;
+    public AudioSource Footsteps, trapSound1, trapsound2, spellSound, ThiefToolSound, MetalDoorSound, WoodDoorSound, LockDoorSound, wilhelm;
+    public Animator deathAnimation;
 
     //mapstuff
     public int[,] map = new int[18, 18];
@@ -86,7 +87,18 @@ public class PartyController : MonoBehaviour
         //Check for magical light
         light += magical_light;
 
-        GameObject.FindGameObjectWithTag("LightSource").GetComponent<Light>().range = GameManager.RULES.BrightLight; //Set light to bright
+
+
+        if (GameManager.PARTY.PC[0].wounds >= GameManager.PARTY.PC[0].health && GameManager.PARTY.PC[1].wounds >= GameManager.PARTY.PC[1].health
+    && GameManager.PARTY.PC[2].wounds >= GameManager.PARTY.PC[2].health && GameManager.PARTY.PC[3].wounds >= GameManager.PARTY.PC[3].health) //Party is dead, Party loses game.
+        {
+            SetAllowedMovement(false);
+            deathAnimation.SetBool("isDead", true);
+            wilhelm.PlayOneShot(wilhelm.clip, 1f);
+        }
+
+
+            GameObject.FindGameObjectWithTag("LightSource").GetComponent<Light>().range = GameManager.RULES.BrightLight; //Set light to bright
         GameManager.EXPLORE.ref_darkwarningtext.gameObject.SetActive(false);
         if (light < 5) //If the light is low, set light to dim
         {
@@ -123,10 +135,10 @@ public class PartyController : MonoBehaviour
             }
             if (actionQueue == "DOWN")
             {
-                if (face == 0 && NodeIsValid(x, y + 1) && NotBlockedForMovement(2)) moveTarget = FindNode(x, y + 1).transform;
-                if (face == 1 && NodeIsValid(x + 1, y) && NotBlockedForMovement(3)) moveTarget = FindNode(x + 1, y).transform;
-                if (face == 2 && NodeIsValid(x, y - 1) && NotBlockedForMovement(0)) moveTarget = FindNode(x, y - 1).transform;
-                if (face == 3 && NodeIsValid(x - 1, y) && NotBlockedForMovement(1)) moveTarget = FindNode(x - 1, y).transform;
+                if (face == 0) { face = 2; }
+                else if (face == 2) face = 0;
+                if (face == 1) { face = 3; }
+                else if (face == 3) face = 1;
                 lookTarget = FaceMyTarget(moveTarget.gameObject, face);
             }
             if (actionQueue == "LEFT")
@@ -263,9 +275,9 @@ public class PartyController : MonoBehaviour
     {
         moving = true;
         actionQueue = i;
-        if (i == "UP" || i == "DOWN" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT") if (!playingFootsteps) StartCoroutine(PlayFootSteps());
+        if (i == "UP" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT") if (!playingFootsteps) StartCoroutine(PlayFootSteps());
 
-        if (i == "UP" || i == "DOWN" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT" || i == "INTERACT") PassTurn();
+        if (i == "UP" || i == "SLIDE_LEFT" || i == "SLIDE_RIGHT" || i == "INTERACT") PassTurn();
 
         yield return new WaitForSecondsRealtime(n);
 
@@ -534,5 +546,10 @@ public class PartyController : MonoBehaviour
                 if (bagInventory[_i] != null && bagInventory[_i].type == InventoryItem.equipType.light && bagInventory[_i].active) bagInventory[_i].currentDuration = 0;
             MessageWindow.ShowMessage_Static("You are plunged into darkness!");
         }
+    }
+
+    public void APARTYDIED()
+    {
+        SceneManager.LoadScene("DefeatScreen");
     }
 }

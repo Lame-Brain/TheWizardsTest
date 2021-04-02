@@ -3,7 +3,32 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WaypointManager
+  - LightSource
+  - GameRules
+  - Map
+  - Mob
+  - NodeHive
+  - TopSort
+  - StoreSlot
+  - BagSlot
+  - Item_Tile
+  - SpellSlot
+  - MiniMapTile
+  - Node
+  - MazeEntrance
+  - MapLadder
+  - MapFloor
+  - MapWall
+  - MapDoor
+  - Signage
+  - ChestParent
+  - Torch
+  - Chest
+  - Waypoint
+  - MobSpawner
+  - donotdestroy
   layers:
   - Default
   - TransparentFX

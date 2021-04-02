@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     public Material[] DungeonColorTextures;
     public Spell[] spells;
     public InventoryItem[] items;
-    public AudioSource PageSound, SplatSound, WhiffSound, VictorySound, BattleSound, laddersound;
+    public AudioSource PageSound, SplatSound, WhiffSound, VictorySound, LoseSound, BattleSound, laddersound;
+    public GameObject partyWindow, UIwindow;
 
     public int SelectedSaveSlot;
 
@@ -122,5 +123,11 @@ public class GameManager : MonoBehaviour
         GameManager.GAME.SplatSound.Play();
         GameObject _go = Instantiate(EXPLORE.ref_Splash, target.transform);
         _go.GetComponent<Splash>().Show(text, bg, tc);
+    }
+
+    public void ToggleUI(bool state)
+    {
+        partyWindow.SetActive(state);
+        UIwindow.SetActive(state);
     }
 }

@@ -135,7 +135,8 @@ public class BattleScreenController : MonoBehaviour
         if(GameManager.PARTY.PC[0].wounds >= GameManager.PARTY.PC[0].health && GameManager.PARTY.PC[1].wounds >= GameManager.PARTY.PC[1].health 
             && GameManager.PARTY.PC[2].wounds >= GameManager.PARTY.PC[2].health && GameManager.PARTY.PC[3].wounds >= GameManager.PARTY.PC[3].health) //Party is dead, Party loses game.
         {
-
+            GameManager.GAME.LoseSound.Play();
+            EndBattle();
         }
 
         bool _battleOver = true;
