@@ -39299,7 +39299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   northLink: {fileID: 0}
   eastLink: {fileID: 1503895781}
-  southLink: {fileID: 0}
+  southLink: {fileID: 1002463103}
   westLink: {fileID: 201618263}
   northDoor: {fileID: 0}
   eastDoor: {fileID: 0}
@@ -41225,7 +41225,7 @@ MonoBehaviour:
   northLink: {fileID: 1221427698}
   eastLink: {fileID: 623241293}
   southLink: {fileID: 1503895781}
-  westLink: {fileID: 0}
+  westLink: {fileID: 1002463103}
   northDoor: {fileID: 0}
   eastDoor: {fileID: 0}
   southDoor: {fileID: 0}
@@ -41953,7 +41953,7 @@ GameObject:
   - component: {fileID: 1002463106}
   - component: {fileID: 1002463105}
   m_Layer: 5
-  m_Name: Node(Clone)
+  m_Name: Node(Clone)------------------------------------------------------------
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47455,7 +47455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150757280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: -1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 11460440}
@@ -64713,7 +64713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   northLink: {fileID: 619474856}
-  eastLink: {fileID: 0}
+  eastLink: {fileID: 1002463103}
   southLink: {fileID: 201618263}
   westLink: {fileID: 1935816131}
   northDoor: {fileID: 0}
@@ -66087,7 +66087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   northLink: {fileID: 1156740478}
   eastLink: {fileID: 1221427698}
-  southLink: {fileID: 0}
+  southLink: {fileID: 1002463103}
   westLink: {fileID: 619474856}
   northDoor: {fileID: 0}
   eastDoor: {fileID: 0}
@@ -85749,7 +85749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095762753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -6, y: 1.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 545079696}
@@ -88511,8 +88511,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  trapLevel: 0
-  trapDamage: 0
+  trapLevel: 1
+  trapDamage: 1
   trapDark: 0
 --- !u!114 &2147021432
 MonoBehaviour:

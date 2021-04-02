@@ -6,6 +6,7 @@ public class Hello_I_am_a_Chest : MonoBehaviour
 {
     public GameObject ref_ChestPanel;
     public InventoryItem[] inventory = new InventoryItem[16];
+    public AudioSource chestopensound;
 
     private GameObject chestInventoryScreen;
     private bool TimeIsPassing = false;
@@ -22,6 +23,7 @@ public class Hello_I_am_a_Chest : MonoBehaviour
     public void InteractWithMe()
     {
         //Bring up menu
+        chestopensound.PlayOneShot(chestopensound.clip, 1f);
         GameManager.EXPLORE.selected_Character = -1;
         chestInventoryScreen = Instantiate(ref_ChestPanel, GameManager.EXPLORE.transform);
         chestInventoryScreen.GetComponent<ChestController>().ref_MyChest = transform.gameObject;

@@ -15,7 +15,7 @@ public class ItemSlotController : MonoBehaviour, IDropHandler
             {
                 //Debug.Log("Dragged from " + eventData.pointerDrag.transform.parent.name + ", a " + eventData.pointerDrag.transform.parent.GetComponent<ItemSlotController>().slotType + " slot, to " + gameObject.name + ", a " + slotType + " slot");
                 //Debug.Log("Dropped " + eventData.pointerDrag.name+" on " + gameObject.name);
-                Debug.Log("Dragged from " + eventData.pointerDrag.transform.parent.tag + " to " + gameObject.tag);
+                //Debug.Log("Dragged from " + eventData.pointerDrag.transform.parent.tag + " to " + gameObject.tag);
                 if (GameManager.EXPLORE.selected_Character == -2) {
                     if (eventData.pointerDrag.transform.parent.tag == "StoreSlot" && gameObject.tag == "BagSlot") gameObject.transform.parent.transform.parent.GetComponentInParent<UI_StoreController>().StoreMoney += (int)eventData.pointerDrag.GetComponent<ItemTileController>().item.value;
                     if (eventData.pointerDrag.transform.parent.tag == "BagSlot" && gameObject.tag == "StoreSlot") gameObject.transform.parent.transform.parent.GetComponentInParent<UI_StoreController>().StoreMoney += (int)eventData.pointerDrag.GetComponent<ItemTileController>().item.value;

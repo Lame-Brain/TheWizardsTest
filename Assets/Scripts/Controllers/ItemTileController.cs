@@ -15,6 +15,7 @@ public class ItemTileController : MonoBehaviour, IPointerEnterHandler, IPointerE
         //If item is coins, transfer value to money
         if (item.type == InventoryItem.equipType.money)
         {
+            GameManager.EXPLORE.goldJingle.Play();
             GameManager.PARTY.money += (int)item.value;
             item = null;
             Tooltip.HideToolTip_Static();
@@ -45,6 +46,8 @@ public class ItemTileController : MonoBehaviour, IPointerEnterHandler, IPointerE
             //If item is coins, transfer value to money
             if (item.type == InventoryItem.equipType.money)
             {
+                GameManager.EXPLORE.goldJingle.Play();
+
                 GameManager.PARTY.money += (int)item.value;
                 item = null;
                 Tooltip.HideToolTip_Static();
@@ -59,6 +62,8 @@ public class ItemTileController : MonoBehaviour, IPointerEnterHandler, IPointerE
             //If item is coins, transfer value to money
             if (item.type == InventoryItem.equipType.money)
             {
+                GameManager.EXPLORE.goldJingle.Play();
+
                 GameManager.PARTY.money += (int)item.value;
                 item = null;
                 Tooltip.HideToolTip_Static();
@@ -77,6 +82,7 @@ public class ItemTileController : MonoBehaviour, IPointerEnterHandler, IPointerE
             //If item is coins, transfer value to money
             if(item.type == InventoryItem.equipType.money)
             {
+                GameManager.EXPLORE.goldJingle.Play();
                 GameManager.PARTY.money += (int)item.value;
                 item.type = InventoryItem.equipType.deleted;
                 _done = true;

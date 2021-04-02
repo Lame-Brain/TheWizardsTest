@@ -22,7 +22,7 @@ public class ExploreController : MonoBehaviour
     public Sprite ref_bagSprite;
     public Text ref_darkwarningtext;
     public GameObject ref_SignPanel;
-    public AudioSource OpenBagSound;
+    public AudioSource OpenBagSound, goldJingle;    
 
     [Header("Other")]
     public bool movementPaused = false;

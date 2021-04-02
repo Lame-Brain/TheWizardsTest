@@ -185,6 +185,7 @@ public class BattleScreenController : MonoBehaviour
                     int _defense = (int)(Random.Range(0, GameManager.RULES.RandomRange) + _target.GetComponent<Character>().defense);
 
                     //5. Resolve the turn with a messaging CoRoutine
+                    iniativeOrder[0].GetComponent<MonsterLogic>().attack.Play();
                     StartCoroutine(ResolveTurn(iniativeOrder[0], _target, _attack, _damage, _defense));
                 }
                 if (iniativeOrder[0].GetComponent<MonsterLogic>().wounds >= iniativeOrder[0].GetComponent<MonsterLogic>().health) StartCoroutine(ResolveTurn(iniativeOrder[0], "cannot act, as they have died."));
@@ -351,6 +352,7 @@ public class BattleScreenController : MonoBehaviour
             }
             if (_defender.GetComponent<MonsterLogic>() != null) //the defender is a monster
             {
+                _defender.GetComponent<MonsterLogic>().hit.Play();
                 ref_OutputText.text = _defender.GetComponent<MonsterLogic>().NPC_Name + " takes " + _damage + " points of damage!";
                 GameManager.Splash("-" + _damage + "hp", Color.red, Color.white, enemySlot[_defender.GetComponent<MonsterLogic>().BS_Slot]);
                 _defender.GetComponent<MonsterLogic>().wounds += _damage;

@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     public Material[] DungeonColorTextures;
     public Spell[] spells;
     public InventoryItem[] items;
-    public AudioSource PageSound, SplatSound, WhiffSound, VictorySound, BattleSound;
+    public AudioSource PageSound, SplatSound, WhiffSound, VictorySound, BattleSound, laddersound;
+
     public int SelectedSaveSlot;
 
     //Dynamic Level Controller data

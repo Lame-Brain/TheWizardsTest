@@ -19,6 +19,7 @@ public class MonsterLogic : MonoBehaviour
     public int maxDamage;
     public int defenseValue;
     public int xpValue;
+    public AudioSource ambience, hit, attack;
 
     public int BS_Slot;
     public int monsterFaceIndex;
@@ -34,6 +35,9 @@ public class MonsterLogic : MonoBehaviour
 
     private void Start()
     {
+        ambience = transform.Find("MonsterAmbient").GetComponent<AudioSource>();
+        hit = transform.Find("MonsterHit").GetComponent<AudioSource>();
+        attack = transform.Find("MonsterAttack").GetComponent<AudioSource>();
         ref_Animator = gameObject.GetComponentInChildren<Animator>();
         monsterState = "Awaiting Update";
         orders = "Awaiting Orders";

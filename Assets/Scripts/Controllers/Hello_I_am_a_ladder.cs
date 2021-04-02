@@ -9,6 +9,13 @@ public class Hello_I_am_a_ladder : MonoBehaviour
 
     public void InteractWithMe()
     {
+        StartCoroutine(PlaySound());
+    }
+
+    IEnumerator PlaySound()
+    {
+        GameManager.GAME.laddersound.Play();
+        yield return new WaitForSeconds(GameManager.GAME.laddersound.clip.length);
         GameManager.GAME.LoadLevel(DestinationIndex, Destination);
     }
 }

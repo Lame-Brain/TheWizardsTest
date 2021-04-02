@@ -9,11 +9,13 @@ public class Hello_I_am_a_door : MonoBehaviour
     public bool doorOpen, knownLocked;
     public float lockValue;
     public int IconIndex;
-    public AudioSource DoorSound, LockSound;
+    private bool metaldoor;
 
     private void Start()
     {
         if (doorOpen) transform.gameObject.SetActive(false);
+        if (transform.name.Substring(transform.name.Length - 2) == "01") metaldoor = false;
+        if (transform.name.Substring(transform.name.Length - 2) == "02") metaldoor = true;
     }
 
     private void Update()
@@ -27,12 +29,13 @@ public class Hello_I_am_a_door : MonoBehaviour
         if (lockValue == 0)//Door is unlocked, open it.
         {
             doorOpen = true;
-            DoorSound.Play();
+            if (metaldoor) GameManager.PARTY.MetalDoorSound.PlayOneShot(GameManager.PARTY.MetalDoorSound.clip, 1f);
+            if (!metaldoor) GameManager.PARTY.MetalDoorSound.PlayOneShot(GameManager.PARTY.WoodDoorSound.clip, 1f);
             transform.gameObject.SetActive(false);
         }
         if (lockValue > 0 && !knownLocked)
         {
-            LockSound.Play();
+            GameManager.PARTY.LockDoorSound.PlayOneShot(GameManager.PARTY.LockDoorSound.clip, 1f);
             knownLocked = true;//Door is locked, but untried. Mark it as locked.
         }
     }
