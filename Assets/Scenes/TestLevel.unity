@@ -588,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &211590978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1362,7 +1362,7 @@ MonoBehaviour:
   ref_MainMenu: {fileID: 267301927}
   ref_BattleScreen: {fileID: 229242905909477362, guid: ef480af808c9ede41be3f3adab6266f3,
     type: 3}
-  ref_TownScreen: {fileID: 4921340441760467720, guid: a55528e84141af74293ac57c6336556f,
+  ref_TownScreen: {fileID: 8179583921294247176, guid: 6ee8f9eafdb578844a4c4aeeeb3a87b8,
     type: 3}
   ref_Interact: {fileID: 757117767}
   ref_empty: {fileID: 21300000, guid: 4a3c7671df0428a42be716e9df01b604, type: 3}

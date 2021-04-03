@@ -17,8 +17,19 @@ public class TiefSkillIconController : MonoBehaviour, IPointerEnterHandler, IPoi
         {
             if (_interactionType == "") //SEARCH
             {
-                MessageWindow.ShowMessage_Static(GameManager.PARTY.PC[GameManager.EXPLORE.selected_Character].characterName + " looks around, but there is nothing to be found.");
-                GameManager.EXPLORE.ClearAllScreens();
+                if (GameManager.PARTY.FindMyNode().GetComponent<GridNode>().trapLevel == 0)
+                { 
+                    MessageWindow.ShowMessage_Static(GameManager.PARTY.PC[GameManager.EXPLORE.selected_Character].characterName + " looks around, but there is nothing to be found.");
+                    GameManager.EXPLORE.ClearAllScreens();
+                }
+
+                if (GameManager.PARTY.FindMyNode().GetComponent<GridNode>().trapLevel > 0)
+                {
+                    //MessageWindow.ShowMessage_Static(GameManager.PARTY.PC[GameManager.EXPLORE.selected_Character].characterName + " looks around, and finds a trap!");
+                    GameManager.PARTY.interactContext = "TRAP";
+                    GameManager.PARTY.Interact_Object = GameManager.PARTY.FindMyNode();
+                    _interactionType = "TRAP";
+                }
             }
             if (_interactionType == "LOCKED DOOR")
             {
