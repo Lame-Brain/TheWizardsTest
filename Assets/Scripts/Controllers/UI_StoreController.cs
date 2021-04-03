@@ -30,8 +30,7 @@ public class UI_StoreController : MonoBehaviour
 
     public void CloseStoreScreen()
     {
-        Destroy(transform.gameObject);
-        GameManager.EXPLORE.ClearAllScreens();
+        transform.gameObject.SetActive(false);
     }
 
     private void GenerateStoreInventory()

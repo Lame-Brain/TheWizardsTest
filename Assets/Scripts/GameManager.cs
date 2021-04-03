@@ -114,6 +114,7 @@ public class GameManager : MonoBehaviour
         {
             yield return null;
         }
+        Debug.Log("scene loaded");
 
         SaveLoadModule.FinishLoadingGame(SelectedSaveSlot);
     }
@@ -127,6 +128,7 @@ public class GameManager : MonoBehaviour
 
     public void ToggleUI(bool state)
     {
+        Debug.Log("Turning off UI");
         partyWindow.SetActive(state);
         UIwindow.SetActive(state);
     }

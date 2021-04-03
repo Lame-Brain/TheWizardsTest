@@ -16,7 +16,7 @@ public class PartyController : MonoBehaviour
     public int x_coor, y_coor, face;
     public InventoryItem[] bagInventory = new InventoryItem[20]; //What is the party carrying?
     public AudioSource Footsteps, trapSound1, trapsound2, spellSound, ThiefToolSound, MetalDoorSound, WoodDoorSound, LockDoorSound, wilhelm;
-    public Animator deathAnimation;
+    public Animator deathAnimation;    
 
     //mapstuff
     public int[,] map = new int[18, 18];
@@ -44,7 +44,9 @@ public class PartyController : MonoBehaviour
     private int trapcheckonX = -100, trapcheckonY = -100;
     public int trapdamage = 0;
     public bool trapdark = false;
-    private bool playingFootsteps = false;    
+    private bool playingFootsteps = false;
+
+    public bool partyIsDead;
 
     // Start is called before the first frame update
     void Start()
@@ -92,9 +94,12 @@ public class PartyController : MonoBehaviour
         if (GameManager.PARTY.PC[0].wounds >= GameManager.PARTY.PC[0].health && GameManager.PARTY.PC[1].wounds >= GameManager.PARTY.PC[1].health
     && GameManager.PARTY.PC[2].wounds >= GameManager.PARTY.PC[2].health && GameManager.PARTY.PC[3].wounds >= GameManager.PARTY.PC[3].health) //Party is dead, Party loses game.
         {
+            GameManager.PARTY.PC[0].wounds = 5;
+            partyIsDead = true;
             SetAllowedMovement(false);
+            deathAnimation.enabled = true;
             deathAnimation.SetBool("isDead", true);
-            wilhelm.PlayOneShot(wilhelm.clip, 1f);
+            if(!wilhelm.isPlaying)wilhelm.Play();
         }
 
 
@@ -321,6 +326,8 @@ public class PartyController : MonoBehaviour
     public void LoadParty(SaveSlot.serialParty p) //**************************************************************************************************************<<<<<
     {
         for (int _i = 0; _i < 4; _i++) PC[_i].LoadCharacter(p.PC[_i]);
+        partyIsDead = false;
+        SetAllowedMovement(true);
         money = p.money;
         light = p.light;
         magical_light = p.magical_light;
@@ -337,8 +344,10 @@ public class PartyController : MonoBehaviour
         transform.rotation = FaceMyTarget(FindMyNode(), face).rotation;
         moveTarget = FindMyNode().transform;
         lookTarget = FaceMyTarget(FindMyNode(), face);
+        transform.Find("Main Camera").transform.localPosition = new Vector3(0, 1, 0);
+        transform.Find("Canvas").GetComponentInChildren<Image>().color = new Color(1, 0, 0, 0);
     }
-    
+
     public void LoadMiniMap(int[] mapCenter, int[] mapNorth, int[] mapEast, int[] mapSouth, int[]mapWest, bool[] doorNorth, bool[] doorEast, bool[] doorSouth, bool[] doorWest, bool[] trapNorth, bool[] trapEast, bool[] trapSouth, bool[] trapWest, bool[] chest)
     {
 
@@ -550,6 +559,9 @@ public class PartyController : MonoBehaviour
 
     public void APARTYDIED()
     {
+        GameManager.GAME.ToggleUI(false);
+        deathAnimation.enabled = false;
+        deathAnimation.SetBool("isDead", false);
         SceneManager.LoadScene("DefeatScreen");
     }
 }

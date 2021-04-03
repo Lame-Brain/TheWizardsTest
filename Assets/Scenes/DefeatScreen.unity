@@ -281,6 +281,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2039214931}
+          m_MethodName: SetCommand
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Load
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2039214931}
+          m_MethodName: WaitForFadeToFinish
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 0
     callback:
       m_PersistentCalls:
@@ -727,11 +749,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436164276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400, y: -300, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1008731097}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &436164278
 MonoBehaviour:
@@ -1063,18 +1085,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1173854713}
-          m_MethodName: FadeScreen
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1173854713}
+        - m_Target: {fileID: 2039214931}
           m_MethodName: SetCommand
           m_Mode: 5
           m_Arguments:
@@ -1083,6 +1094,17 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: MainMenu
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2039214931}
+          m_MethodName: WaitForFadeToFinish
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 0
@@ -1856,7 +1878,6 @@ RectTransform:
   m_Children:
   - {fileID: 2043856213}
   - {fileID: 700737512}
-  - {fileID: 436164277}
   - {fileID: 1173854709}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -2089,7 +2110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1173854709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2104,7 +2125,7 @@ RectTransform:
   - {fileID: 1820738762}
   - {fileID: 555793812}
   m_Father: {fileID: 1008731097}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2179,6 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5380a994f17b2404aa99c4794adaa015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Anim: {fileID: 0}
 --- !u!1 &1580727644
 GameObject:
   m_ObjectHideFlags: 0
@@ -7960,10 +7982,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2039214930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d131a0bfbf655c64387916324187276e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5380a994f17b2404aa99c4794adaa015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hisssss: {fileID: 2024898993}
+  Anim: {fileID: 1008731098}
 --- !u!4 &2039214932
 Transform:
   m_ObjectHideFlags: 0

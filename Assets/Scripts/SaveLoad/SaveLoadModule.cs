@@ -27,12 +27,16 @@ public static class SaveLoadModule
 
     public static void LoadGame(int _n)
     {
+        Debug.Log("reached loadgame");
         if(File.Exists(Application.persistentDataPath + "/saveGame0" + _n + ".sg"))
         {
+            Debug.Log("found save");
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/saveGame0"+_n+".sg", FileMode.Open);
             SaveLoadModule.save_slot[_n] = (SaveSlot)bf.Deserialize(file);
             file.Close();
+
+            Debug.Log("checking scene");
 
             //If not in the correct level, load the correct level
             if (SceneManager.GetActiveScene().buildIndex != save_slot[_n].CurrentScene) GameManager.GAME.LoadLevelandWaitUntilDone(save_slot[_n].CurrentScene, "Here");
@@ -42,6 +46,10 @@ public static class SaveLoadModule
 
     public static void FinishLoadingGame(int _n)
     {
+        Debug.Log("finishing load");
+
+        GameManager.GAME.ToggleUI(true);
+
         //Load data to current
         save_slot[_n].LoadData(save_slot[_n]);
 

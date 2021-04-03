@@ -490,7 +490,7 @@ public class SaveSlot
     {
         Debug.Log("Saving data for saveslot #" + GameManager.GAME.SelectedSaveSlot + ", map " + c);
         PartyController p = GameManager.PARTY;
-        s.scene_List[c].MiniMapData.Insert(0, new MiniMapData(p.map, p.mapN, p.mapE, p.mapS, p.mapW, p.mapND, p.mapED, p.mapSD, p.mapWD, p.mapNT, p.mapET, p.mapST, p.mapWT, p.mapC));
+        if(!GameManager.PARTY.partyIsDead) s.scene_List[c].MiniMapData.Insert(0, new MiniMapData(p.map, p.mapN, p.mapE, p.mapS, p.mapW, p.mapND, p.mapED, p.mapSD, p.mapWD, p.mapNT, p.mapET, p.mapST, p.mapWT, p.mapC));
     }
 
     public void GetMiniMap(SaveSlot s, int c)

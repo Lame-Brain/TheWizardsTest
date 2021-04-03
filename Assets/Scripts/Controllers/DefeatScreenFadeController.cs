@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class DefeatScreenFadeController : MonoBehaviour
 {
-    private Animator Anim;
+    public Animator Anim;
     private string Command;
 
     public void Start()
     {
-        Anim = this.GetComponent<Animator>();
     }
+
     public void FadeScreen()
     {
         Anim.SetBool("FadeAway", true);
@@ -24,5 +24,6 @@ public class DefeatScreenFadeController : MonoBehaviour
     {
         GameManager.GAME.ToggleUI(true);
         if (Command == "MainMenu") SceneManager.LoadScene("TitleScreen");
+        if (Command == "Load") GameManager.EXPLORE.LoadGame();
     }
 }
