@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     {        
         //Debug settings
         SelectedSaveSlot = 0;
+        PARTY.ref_BGM.GetLevelBGM(1);
         SaveLoadModule.InitSave(SelectedSaveSlot);
     }
 
@@ -78,14 +79,17 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int DestinationIndex, string Destination)
     {
         SaveLoadModule.save_slot[SelectedSaveSlot].SetMiniMap(SaveLoadModule.save_slot[SelectedSaveSlot], SceneManager.GetActiveScene().buildIndex);
+        PARTY.ref_BGM.FadeOutBG();
 
         if (Destination != "STORE")
         {
+            PARTY.ref_BGM.GetLevelBGM(DestinationIndex);
             SceneManager.LoadScene(DestinationIndex);
             StartCoroutine(waitForSceneLoad(DestinationIndex, Destination));            
         }
         if(Destination == "STORE")
         {
+            PARTY.ref_BGM.FadeInBG(0);
             EXPLORE.OpenTownScreen();
         }
     }

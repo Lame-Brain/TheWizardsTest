@@ -65,12 +65,23 @@ public class GridNode : MonoBehaviour
         }
     }
 
-    public void LoadInventory(SaveSlot.serialItem[] serialItem)
+    public void LoadNode(SaveSlot.NodeData node)
     {
         for (int c = 0; c < 9; c++)
         {
             inventory[c] = null;
-            if (serialItem[c].genericName != "") inventory[c] = new InventoryItem(serialItem[c]);
+            if (node.inventory[c].genericName != "") inventory[c] = new InventoryItem(node.inventory[c]);
         }
+        trapLevel = node.trapLevel; trapDamage = node.trapDamage;
+        trapDark = node.trapDark;
     }
+
+    /*    public void LoadInventory(SaveSlot.serialItem[] serialItem)
+        {
+            for (int c = 0; c < 9; c++)
+            {
+                inventory[c] = null;
+                if (serialItem[c].genericName != "") inventory[c] = new InventoryItem(serialItem[c]);
+            }        
+        }*/
 }

@@ -198,12 +198,16 @@ public class SaveSlot
     {
         public int x, y;
         public serialItem[] inventory;
+        public int trapLevel, trapDamage;
+        public bool trapDark;
 
-        public NodeData(int _x, int _y, InventoryItem[] _inv)
+        public NodeData(int _x, int _y, InventoryItem[] _inv, int tl, int td, bool tD)
         {
             x = _x; y = _y;
             inventory = new serialItem[9];
             for (int i = 0; i < 9; i++) inventory[i] = new serialItem(_inv[i]);
+            trapLevel = tl; trapDamage = td;
+            trapDark = tD;
         }
     }
     [System.Serializable]
@@ -379,7 +383,8 @@ public class SaveSlot
 
             //Nodes
             RULES.FindAllChildrenWithTag(GameManager.GAME.NodeHive[i].transform, "Node", _results);
-            foreach (GameObject go in _results) scene_List[i].NodeData.Add(new NodeData((int)go.gameObject.transform.position.x, (int)go.gameObject.transform.position.z, go.GetComponent<GridNode>().inventory));
+            foreach (GameObject go in _results) scene_List[i].NodeData.Add(new NodeData((int)go.gameObject.transform.position.x, (int)go.gameObject.transform.position.z, 
+                go.GetComponent<GridNode>().inventory, go.GetComponent<GridNode>().trapLevel, go.GetComponent<GridNode>().trapDamage, go.GetComponent<GridNode>().trapDark));
 
             //MiniMap
             if (scene_List[i].MiniMapData.Count == 0) { scene_List[i].MiniMapData.Add(new MiniMapData(0)); }
@@ -428,7 +433,8 @@ public class SaveSlot
 
         //Nodes
         RULES.FindAllChildrenWithTag(GameObject.FindGameObjectWithTag("NodeHive").transform, "Node", _results);
-        foreach (GameObject go in _results) scene_List[s].NodeData.Add(new NodeData((int)go.gameObject.transform.position.x, (int)go.gameObject.transform.position.z, go.GetComponent<GridNode>().inventory));
+        foreach (GameObject go in _results) scene_List[s].NodeData.Add(new NodeData((int)go.gameObject.transform.position.x, (int)go.gameObject.transform.position.z, go.GetComponent<GridNode>().inventory, 
+            go.GetComponent<GridNode>().trapLevel, go.GetComponent<GridNode>().trapDamage, go.GetComponent<GridNode>().trapDark));
 
         //MiniMap
         PartyController p = GameManager.PARTY;
@@ -471,7 +477,7 @@ public class SaveSlot
         RULES.FindAllChildrenWithTag(GameObject.FindGameObjectWithTag("NodeHive").transform, "Node", _results);
         foreach (GameObject go in _results)
             foreach (NodeData savedNode in s.scene_List[c].NodeData)
-                if ((int)go.transform.position.x == savedNode.x && (int)go.transform.position.z == savedNode.y) go.GetComponent<GridNode>().LoadInventory(savedNode.inventory);
+                if ((int)go.transform.position.x == savedNode.x && (int)go.transform.position.z == savedNode.y) go.GetComponent<GridNode>().LoadNode(savedNode);//go.GetComponent<GridNode>().LoadInventory(savedNode.inventory);
         _results.Clear();
 
         //MiniMap

@@ -16,6 +16,7 @@ public class PartyController : MonoBehaviour
     public int x_coor, y_coor, face;
     public InventoryItem[] bagInventory = new InventoryItem[20]; //What is the party carrying?
     public AudioSource Footsteps, trapSound1, trapsound2, spellSound, ThiefToolSound, MetalDoorSound, WoodDoorSound, LockDoorSound, wilhelm;
+    public Sound_Music ref_BGM;
     public Animator deathAnimation;    
 
     //mapstuff
