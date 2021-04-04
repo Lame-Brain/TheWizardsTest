@@ -24,7 +24,7 @@ public class SpawnController : MonoBehaviour
     private void SpawnMob()
     {         
         if((transform.childCount - 1) < MaxNumberOfSpawns && (Vector3.Distance(transform.position, player.transform.position) > 15f)) //Wont Spawn if the player is too close, or there are too many spawns already
-            Instantiate(ref_mobPF, new Vector3(transform.position.x + Random.Range(0f, offsetRadius), 1.4f, transform.position.x + Random.Range(0f, offsetRadius)), Quaternion.identity, transform);
+            Instantiate(ref_mobPF, new Vector3(transform.position.x + Random.Range(0f, offsetRadius), 1f, transform.position.x + Random.Range(0f, offsetRadius)), Quaternion.identity, transform);
     }
     private void SetAlarm()
     {

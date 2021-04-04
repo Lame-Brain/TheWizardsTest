@@ -19,7 +19,7 @@ public class MonsterLogic : MonoBehaviour
     public int maxDamage;
     public int defenseValue;
     public int xpValue;
-    public AudioSource ambience, hit, attack;
+    [HideInInspector]public AudioSource ambience, hit, attack;
 
     public int BS_Slot;
     public int monsterFaceIndex;
@@ -52,10 +52,12 @@ public class MonsterLogic : MonoBehaviour
         if (distanceToPlayer > 15f) attackingPlayer = false;
         if (!inBattle && distanceToPlayer < 5)
         {
-            inBattle = true;
             if (GameManager.EXPLORE.current_Battle_Screen == null) GameManager.EXPLORE.OpenBattleScreen();
-            if (GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Count < 10)
+            if (GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Count < 10 && (!GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().battleStarted))
+            {
+                inBattle = true;
                 GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(gameObject); //<--------Adds monster to battle if it is close enough            
+            }
         }
     }
 

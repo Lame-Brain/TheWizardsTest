@@ -18,7 +18,16 @@ public class UI_TownPanel : MonoBehaviour
 
     public void CloseTown()
     {
+        StartCoroutine(_CloseTown());
+    }
+
+    IEnumerator _CloseTown()
+    {
+        GameManager.GAME.laddersound.Play();
+        yield return new WaitForSeconds(GameManager.GAME.laddersound.clip.length);
+        GameManager.GAME.LoadLevel(1, "From Surface");
         GameManager.PARTY.SetAllowedMovement(true);
         Destroy(this.gameObject);
     }
+
 }

@@ -124,82 +124,7 @@ public class PartyController : MonoBehaviour
 
         if (AllowMovement) //I want to be able to pause movement and input while in menus
         {
-            //if (!transform.hasChanged) { Debug.Log("!transform.hasChanged"); StartCoroutine(MoveDelay(GameManager.RULES.MoveDelay)); }
-
-            if (!moving && Input.GetAxisRaw("Vertical") > 0) //This is for moving forward
-            {
-                //Moving is true, won't accept commands until it is false.
-                moving = true;
-                //Set new move target based on GridNode Links
-                if (face == 0 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
-                if (face == 1 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-                if (face == 2 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
-                if (face == 3 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
-                //Simplify grid coordinates of nodes based on their world coordinates
-                int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                //Assign new look target based on facing and move target
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-                PassTurn();
-                if (!playingFootsteps) StartCoroutine(PlayFootSteps());
-            }
-            if (!moving && Input.GetAxisRaw("Horizontal") > 0) // this is for sliding to the Right
-            {
-                //Moving is true, won't accept commands until it is false.
-                moving = true;
-                //Set new move target based on GridNode Links
-                if (face == 0 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-                if (face == 1 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
-                if (face == 2 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
-                if (face == 3 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
-                //Simplify grid coordinates of nodes based on their world coordinates
-                int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                //Assign new look target based on facing and move target
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-                PassTurn();
-                if (!playingFootsteps) StartCoroutine(PlayFootSteps());
-            }
-            if (!moving && Input.GetAxisRaw("Horizontal") < 0) // this is for sliding left
-            {
-                //Moving is true, won't accept commands until it is false.
-                moving = true;
-                //Set new move target based on GridNode Links
-                if (face == 0 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
-                if (face == 1 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
-                if (face == 2 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-                if (face == 3 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
-                //Simplify grid coordinates of nodes based on their world coordinates
-                int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
-                //Assign new look target based on facing and move target
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-                PassTurn();
-                if (!playingFootsteps) StartCoroutine(PlayFootSteps());
-            }
-            if (!moving && Input.GetAxisRaw("Vertical") < 0) //This is for back
-            {
-                moving = true;
-                if (face == 0) { face = 2; }
-                else if (face == 2) face = 0;
-                if (face == 1) { face = 3; }
-                else if (face == 3) face = 1;
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-            }
-            if (!moving && Input.GetAxisRaw("Horizontal2") < 0) //This is for rotating left
-            {
-                moving = true;
-                face--;
-                if (face < 0) face = 3;
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-            }
-            if (!moving && Input.GetAxisRaw("Horizontal2") > 0) // this is for rotating right
-            {
-                moving = true;
-                face++;
-                if (face > 3) face = 0;
-                lookTarget = FaceMyTarget(moveTarget.gameObject, face);
-            }
+            LookfoMovementInput();
 
             if(moving) StartCoroutine(MoveToTarget());
 
@@ -281,11 +206,84 @@ public class PartyController : MonoBehaviour
             if (_go.GetComponent<GridNode>().trapDamage != 0) map[x_, y_] = 2;
             if (_go.GetComponent<GridNode>().trapDark) map[x_, y_] = 3;
         }
+    }
 
-
-
-
-
+    private void LookfoMovementInput()
+    {
+        if (!moving && Input.GetAxisRaw("Vertical") > 0) //This is for moving forward
+        {
+            //Moving is true, won't accept commands until it is false.
+            moving = true;
+            //Set new move target based on GridNode Links
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            //Simplify grid coordinates of nodes based on their world coordinates
+            int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            //Assign new look target based on facing and move target
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+            PassTurn();
+            if (!playingFootsteps) StartCoroutine(PlayFootSteps());
+        }
+        if (!moving && Input.GetAxisRaw("Horizontal") > 0) // this is for sliding to the Right
+        {
+            //Moving is true, won't accept commands until it is false.
+            moving = true;
+            //Set new move target based on GridNode Links
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            //Simplify grid coordinates of nodes based on their world coordinates
+            int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            //Assign new look target based on facing and move target
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+            PassTurn();
+            if (!playingFootsteps) StartCoroutine(PlayFootSteps());
+        }
+        if (!moving && Input.GetAxisRaw("Horizontal") < 0) // this is for sliding left
+        {
+            //Moving is true, won't accept commands until it is false.
+            moving = true;
+            //Set new move target based on GridNode Links
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            //Simplify grid coordinates of nodes based on their world coordinates
+            int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
+            //Assign new look target based on facing and move target
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+            PassTurn();
+            if (!playingFootsteps) StartCoroutine(PlayFootSteps());
+        }
+        if (!moving && Input.GetAxisRaw("Vertical") < 0) //This is for back
+        {
+            moving = true;
+            if (face == 0) { face = 2; }
+            else if (face == 2) face = 0;
+            if (face == 1) { face = 3; }
+            else if (face == 3) face = 1;
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+        }
+        if (!moving && Input.GetAxisRaw("Horizontal2") < 0) //This is for rotating left
+        {
+            moving = true;
+            face--;
+            if (face < 0) face = 3;
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+        }
+        if (!moving && Input.GetAxisRaw("Horizontal2") > 0) // this is for rotating right
+        {
+            moving = true;
+            face++;
+            if (face > 3) face = 0;
+            lookTarget = FaceMyTarget(moveTarget.gameObject, face);
+        }
     }
 
     IEnumerator MoveToTarget()
@@ -295,12 +293,16 @@ public class PartyController : MonoBehaviour
             //Debug.Log("I am: " + transform.position + ", but I want to be: " + moveTarget.position);
             transform.position = Vector3.MoveTowards(transform.position, moveTarget.position, GameManager.RULES.moveSpeed * Time.deltaTime);
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(lookTarget.position - transform.position), GameManager.RULES.turnSpeed * Time.deltaTime);
+
             yield return null;
         }
-        transform.position = moveTarget.position; //"Snap" party to target location
-        transform.LookAt(lookTarget.position); //"Snap" party to rotation            
         moving = false;
-        Debug.Log("moving = false");
+//        LookfoMovementInput();
+//        if (!moving)
+        {
+            transform.position = moveTarget.position; //"Snap" party to target location
+            transform.LookAt(lookTarget.position); //"Snap" party to rotation            
+        }
     }
 
     IEnumerator PlayFootSteps()

@@ -12,6 +12,19 @@ public class NodePlacement : Editor
 
         if (GUILayout.Button("Release the Nodes"))
         {
+            //BIND THE TORCHES! BIND THEM TO THE WALLS!
+            GameObject[] AllTheTORCHES = GameObject.FindGameObjectsWithTag("Torch"); GameObject[] AllTheWalls = GameObject.FindGameObjectsWithTag("MapWall");
+            foreach(GameObject torch in AllTheTORCHES)
+            {
+                //find the closest mapwall
+                GameObject closest_wall = AllTheWalls[0];
+                for (int _i = 0; _i < AllTheWalls.Length; _i++)
+                {
+                    if (Vector3.Distance(torch.transform.position, AllTheWalls[_i].transform.position) < Vector3.Distance(torch.transform.position, closest_wall.transform.position)) closest_wall = AllTheWalls[_i];
+                }
+                torch.transform.SetParent(closest_wall.transform);
+            }
+
             //Init gn (GridNodes) array with plenty of extra space to prevent overflows
             GameObject[,] gn = new GameObject[32,32];
 
@@ -43,10 +56,10 @@ public class NodePlacement : Editor
                 gn[x, y].GetComponent<GridNode>().southDoor = null;
                 gn[x, y].GetComponent<GridNode>().westDoor = null;
                 //Set Points of Interest
-                if (o.transform.Find("NorthChest") != null) { gn[x, y].transform.Find("North").transform.localPosition = new Vector3(0, -3, -6); gn[x, y].GetComponent<GridNode>().northChest = true; }
-                if (o.transform.Find("EastChest") != null) { gn[x, y].transform.Find("East").transform.localPosition = new Vector3(-6, -3, 0); gn[x, y].GetComponent<GridNode>().eastChest = true; }
-                if (o.transform.Find("SouthChest") != null) { gn[x, y].transform.Find("South").transform.localPosition = new Vector3(0, -3, 6); gn[x, y].GetComponent<GridNode>().southChest = true; }
-                if (o.transform.Find("WestChest") != null) { gn[x, y].transform.Find("West").transform.localPosition = new Vector3(6, -3, 0); gn[x, y].GetComponent<GridNode>().westChest = true; }
+                //if (o.transform.Find("NorthChest") != null) { gn[x, y].transform.Find("North").transform.localPosition = new Vector3(0, -3, -6); gn[x, y].GetComponent<GridNode>().northChest = true; }
+                //if (o.transform.Find("EastChest") != null) { gn[x, y].transform.Find("East").transform.localPosition = new Vector3(-6, -3, 0); gn[x, y].GetComponent<GridNode>().eastChest = true; }
+                //if (o.transform.Find("SouthChest") != null) { gn[x, y].transform.Find("South").transform.localPosition = new Vector3(0, -3, 6); gn[x, y].GetComponent<GridNode>().southChest = true; }
+                //if (o.transform.Find("WestChest") != null) { gn[x, y].transform.Find("West").transform.localPosition = new Vector3(6, -3, 0); gn[x, y].GetComponent<GridNode>().westChest = true; }
             }
 
             //Establish Direction Links

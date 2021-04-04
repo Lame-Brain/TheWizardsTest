@@ -153,7 +153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2806822963729897916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 3604537989180382514}
@@ -254,7 +254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3680302387735565622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 422362471611428191}
@@ -287,10 +287,9 @@ MonoBehaviour:
   maxDamage: 4
   defenseValue: 6
   xpValue: 25
-  ambience: {fileID: 1941161627870505129, guid: 32e74addac4b4584586b523fa406a255,
-    type: 3}
-  hit: {fileID: 5811517689497480538, guid: 1449ebfa51e34574abf19fb78040e00c, type: 3}
-  attack: {fileID: 323995649735624905, guid: ce2601f8106741543a1d3c4889fd9033, type: 3}
+  ambience: {fileID: 8727117592039701674}
+  hit: {fileID: 8772186673547221435}
+  attack: {fileID: 3909049704610542932}
   BS_Slot: 0
   monsterFaceIndex: 0
   monsterState: 
@@ -315,7 +314,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 0.9
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &4001226310014616277
@@ -541,7 +540,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 3
-  MaxDistance: 52
+  MaxDistance: 12
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

@@ -13,6 +13,7 @@ public class BattleScreenController : MonoBehaviour
     public GameObject ref_OutputPanel, ref_monsterPanelPF, ref_MPF, ref_InfoBox;
     public Text ref_OutputText;    
     public Sprite ref_AggStanceIcon, ref_DefStanceIcon;
+    public bool battleStarted;
 
     private string buttonPushed;
     private GameObject go;
@@ -22,13 +23,15 @@ public class BattleScreenController : MonoBehaviour
             
     private void Start()
     {
+        battleStarted = false;
         enemySlot = new List<GameObject>();
-        StartCoroutine("DelayStart", .5f);
+        StartCoroutine("DelayStart", 1f);
     }
     IEnumerator DelayStart(float n)
     {
         yield return new WaitForSeconds(n);
 
+        battleStarted = true;
         for (int _i = 0; _i < enemy.Count; _i++)
         {
             go = Instantiate(ref_monsterPanelPF, ref_MPF.transform);
