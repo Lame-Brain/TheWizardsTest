@@ -18,6 +18,7 @@ public static class SaveLoadModule
 
     public static void SaveGame(int _n)
     {
+        Debug.Log("saving");
         save_slot[_n].SaveData(SceneManager.GetActiveScene().buildIndex);
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/saveGame0"+_n+".sg");

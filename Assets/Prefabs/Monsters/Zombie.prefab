@@ -357,8 +357,11 @@ MonoBehaviour:
   maxDamage: 6
   defenseValue: 7
   xpValue: 35
+  ambience: {fileID: 0}
+  hit: {fileID: 0}
+  attack: {fileID: 0}
   BS_Slot: 0
-  monsterFaceIndex: 6
+  monsterFaceIndex: 10
   monsterState: 
   orders: 
   attackingPlayer: 0

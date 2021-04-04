@@ -344,6 +344,7 @@ public class SaveSlot
 
     public void InitialSave()
     {
+        Debug.Log("IS ran");
         List<GameObject> _results = new List<GameObject>();
         List<GameObject> _temp = new List<GameObject>();
 

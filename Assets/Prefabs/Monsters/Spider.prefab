@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6069cbc288d989d45a679b9da17bea0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 8092024885459323477}
   wayPoint: {fileID: 0}
   NPC_Name: 
   wounds: 0
@@ -585,8 +585,11 @@ MonoBehaviour:
   maxDamage: 0
   defenseValue: 0
   xpValue: 0
+  ambience: {fileID: 0}
+  hit: {fileID: 0}
+  attack: {fileID: 0}
   BS_Slot: 0
-  monsterFaceIndex: 0
+  monsterFaceIndex: 8
   monsterState: 
   orders: 
   attackingPlayer: 0

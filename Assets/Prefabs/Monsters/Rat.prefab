@@ -429,19 +429,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6069cbc288d989d45a679b9da17bea0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 4882284681094083283}
   wayPoint: {fileID: 0}
   NPC_Name: 
   wounds: 0
-  health: 0
-  initBonus: 0
+  health: 12
+  initBonus: 1
   bonusToHit: 0
   minDamage: 0
-  maxDamage: 0
-  defenseValue: 0
-  xpValue: 0
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
+  ambience: {fileID: 3032819726307934492, guid: 911e0d9b807c3fb4a90666c4f9000330,
+    type: 3}
+  hit: {fileID: 1785438561985724371, guid: 05f6ec3e0b58cd54db60233523b4ac04, type: 3}
+  attack: {fileID: 7656262275135608740, guid: 3edba17b4651f274e8879e901819befc, type: 3}
   BS_Slot: 0
-  monsterFaceIndex: 0
+  monsterFaceIndex: 5
   monsterState: 
   orders: 
   attackingPlayer: 0

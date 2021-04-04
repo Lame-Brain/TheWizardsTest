@@ -164,7 +164,7 @@ MonoBehaviour:
   hit: {fileID: 0}
   attack: {fileID: 0}
   BS_Slot: 0
-  monsterFaceIndex: 2
+  monsterFaceIndex: 3
   monsterState: 
   orders: 
   attackingPlayer: 0
