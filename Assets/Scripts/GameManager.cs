@@ -36,10 +36,15 @@ public class GameManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
+        StartCoroutine(LateStart(1.5f));
+    }
+    IEnumerator LateStart(float n)
+    {
+        yield return new WaitForSeconds(n);
         //Debug settings
         SelectedSaveSlot = 0;
-        PARTY.ref_BGM.GetLevelBGM(1);
+        PARTY.ref_BGM.GetLevelBGM(SceneManager.GetActiveScene().buildIndex);
         SaveLoadModule.InitSave(SelectedSaveSlot);
     }
 

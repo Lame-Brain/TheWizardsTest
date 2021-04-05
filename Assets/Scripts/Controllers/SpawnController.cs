@@ -34,7 +34,7 @@ public class SpawnController : MonoBehaviour
 
     public void TurnPasses()
     {
-        timer++;
+        if(minTimeToSpawn < 2147483647) timer++;
         if(timer > alarm)
         {
             SetAlarm();

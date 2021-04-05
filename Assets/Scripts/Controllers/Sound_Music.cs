@@ -50,6 +50,6 @@ public class Sound_Music : MonoBehaviour
 
     public void GetLevelBGM(int i)
     {
-        if(i == 1) FadeInBG(1);
+        FadeInBG(i);
     }
 }

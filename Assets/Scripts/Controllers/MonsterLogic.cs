@@ -19,7 +19,7 @@ public class MonsterLogic : MonoBehaviour
     public int maxDamage;
     public int defenseValue;
     public int xpValue;
-    [HideInInspector]public AudioSource ambience, hit, attack;
+    [HideInInspector]public AudioSource ambience, hit, attack, battleMusic;
 
     public int BS_Slot;
     public int monsterFaceIndex;
