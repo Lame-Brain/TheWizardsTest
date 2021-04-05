@@ -32,6 +32,10 @@ TagManager:
   - Melech
   - Tromuu
   - Zeldulee
+  - SFX
+  - Music
+  - Dialogue
+  - AmbientSFX
   layers:
   - Default
   - TransparentFX

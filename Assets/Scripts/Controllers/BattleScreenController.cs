@@ -297,6 +297,7 @@ public class BattleScreenController : MonoBehaviour
         Destroy(gameObject);
         GameManager.EXPLORE.DrawExplorerUI();
         GameManager.PARTY.SetAllowedMovement(true);
+        GameManager.PARTY.ref_BGM.StopBattleMusic();
 
     }
 

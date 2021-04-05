@@ -53,9 +53,6 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Tab)) //DEBUG
         {
-            //LoadLevel(1, "From Level 1");
-            LoadLevel(0, "STORE");
-            GameManager.PARTY.TeleportToDungeonStart("From Level 1");
             //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
             //PARTY.PassTurn();

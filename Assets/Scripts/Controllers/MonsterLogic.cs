@@ -59,7 +59,8 @@ public class MonsterLogic : MonoBehaviour
                 if (GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Count < 10 && (!GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().battleStarted))
                 {
                     inBattle = true;
-                    GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(gameObject); //<--------Adds monster to battle if it is close enough            
+                    GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(gameObject); //<--------Adds monster to battle if it is close enough
+                    GameManager.PARTY.ref_BGM.StartBattleMusic(transform.Find("MonsterBattlemusic").GetComponent<AudioSource>());
                 }
             }
             if (isBoss)

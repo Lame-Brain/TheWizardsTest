@@ -149,21 +149,21 @@ public class ZelduleeConvoController : MonoBehaviour
     {
         AudioSource _as; float wait = .5f;
         ref_What_Artifact_reply.SetActive(true);
-        ref_What_Happening_reply.GetComponent<Text>().text = "The artifact? Why it is the Serpent's Totem of course! Without it, Tromuu will never be whole,";
+        ref_What_Artifact_reply.GetComponent<Text>().text = "The artifact? Why it is the Serpent's Totem of course! Without it, Tromuu will never be whole,";
         _as = transform.Find("Audio").Find("What_is_the_Artifact1").GetComponent<AudioSource>();
         _as.Play();
         yield return new WaitForSeconds((_as.clip.length + wait));
 
-        ref_What_Happening_reply.GetComponent<Text>().text = "but with it Melech takes a step further along the road to becoming more like me! ";
+        ref_What_Artifact_reply.GetComponent<Text>().text = "but with it, Melech takes a step further along the road to becoming more like me! ";
         _as = transform.Find("Audio").Find("What_is_the_Artifact2").GetComponent<AudioSource>();
         _as.Play();
         yield return new WaitForSeconds((_as.clip.length + wait));
 
-        ref_What_Happening_reply.GetComponent<Text>().text = "It is just there, behind me... as if that could possibly matter now...";
+        ref_What_Artifact_reply.GetComponent<Text>().text = "It is just there, behind me... as if that could possibly matter now...";
         _as = transform.Find("Audio").Find("What_is_the_Artifact3").GetComponent<AudioSource>();
         _as.Play();
         yield return new WaitForSeconds((_as.clip.length + wait));
-        ref_WhoAreYou_reply.SetActive(true);
+        ref_WhoAreYou.SetActive(true);
         ref_What_Happening.SetActive(true);
         ref_Die.SetActive(true);
     }
@@ -175,6 +175,7 @@ public class ZelduleeConvoController : MonoBehaviour
 
         GameManager.EXPLORE.OpenBattleScreen();
         GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(ref_Zeldulee);
+        GameManager.PARTY.ref_BGM.StartBattleMusic(ref_Zeldulee.transform.Find("MonsterBattlemusic").GetComponent<AudioSource>());
         if (ref_Guards.Length > 0)
         {
             for (int _i = 0; _i < ref_Guards.Length; _i++)
