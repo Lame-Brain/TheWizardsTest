@@ -565,6 +565,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 254783886669076226, guid: 863f828a90173b64b85930261e1c9bf8,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 254783886669076226, guid: 863f828a90173b64b85930261e1c9bf8,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -894,6 +899,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 778344969}
     m_Modifications:
+    - target: {fileID: 199288661451886471, guid: e32843a4c8e53744299d733147ac46e0,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 199288661451886471, guid: e32843a4c8e53744299d733147ac46e0,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -1287,6 +1297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4453830670441629155, guid: d22dde9290e6c7041a8ae836d2ea1bc3,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4453830670441629155, guid: d22dde9290e6c7041a8ae836d2ea1bc3,
         type: 3}
@@ -1709,6 +1724,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8599914653180071601, guid: dc0bdd584e9cbe44e9f5ad157f045365,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599914653180071601, guid: dc0bdd584e9cbe44e9f5ad157f045365,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -1906,6 +1926,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 778344969}
     m_Modifications:
+    - target: {fileID: 2581581021737522590, guid: 61f85f6a9b359f74db8e003bb332bc35,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2581581021737522590, guid: 61f85f6a9b359f74db8e003bb332bc35,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -2324,6 +2349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9006052319782193066, guid: 64196890c299a464db1bb79ef2210c5f,
         type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006052319782193066, guid: 64196890c299a464db1bb79ef2210c5f,
+        type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
@@ -2675,6 +2705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ForgottenEyes
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675967854506742046, guid: 9ff6fe545d35fed41ba32c3d78e09dab,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3675967854506742046, guid: 9ff6fe545d35fed41ba32c3d78e09dab,
         type: 3}
@@ -4078,16 +4113,16 @@ MonoBehaviour:
   - {fileID: 6919139758724854686, guid: 2603bdf808454564a9c3bccf2b269c9f, type: 3}
   - {fileID: 3521682178073688322, guid: 95832ff081b19cd43b074886d0befe5d, type: 3}
   NodeHive:
-  - {fileID: 0}
+  - {fileID: 4564630999894831532, guid: 2a474b665bb4c734583e9c3786b5b11c, type: 3}
   - {fileID: 3266686353757888452, guid: 05f80d5a03ac9d9449cb29ef5166e366, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 8734043596929770370, guid: 3c4c0fa1ee898384ab2f6d00e7314a63, type: 3}
+  - {fileID: 5051698018381660486, guid: a810221a696418446b14012c648cc99e, type: 3}
 --- !u!4 &992235237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3298774438850308968, guid: 4bf0f06675982f843b42f155954ae97c,
@@ -4636,7 +4671,7 @@ PrefabInstance:
     - target: {fileID: 6654210907357899371, guid: 4dc7bdd6e19b5164b881aca253e772d9,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7806033363197186635, guid: 4dc7bdd6e19b5164b881aca253e772d9, type: 3}
@@ -5785,9 +5820,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Intensity: 10
   m_Range: 12
-  m_SpotAngle: 25
+  m_SpotAngle: 40.6
   m_InnerSpotAngle: 2
   m_CookieSize: 10
   m_Shadows:
@@ -6652,6 +6687,8 @@ MonoBehaviour:
     type: 3}
   OpenBagSound: {fileID: 639367017}
   goldJingle: {fileID: 922973328}
+  Convo:
+  - {fileID: 5769253891994412153, guid: 003ac67ce45940c45ab0af520f3ec182, type: 3}
   movementPaused: 0
   selected_Character: 0
   current_InventoryScreen: {fileID: 0}

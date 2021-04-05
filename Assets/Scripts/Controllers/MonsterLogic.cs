@@ -19,6 +19,7 @@ public class MonsterLogic : MonoBehaviour
     public int maxDamage;
     public int defenseValue;
     public int xpValue;
+    public bool isBoss;
     [HideInInspector]public AudioSource ambience, hit, attack, battleMusic;
 
     public int BS_Slot;
@@ -52,11 +53,21 @@ public class MonsterLogic : MonoBehaviour
         if (distanceToPlayer > 15f) attackingPlayer = false;
         if (!inBattle && distanceToPlayer < 5)
         {
-            if (GameManager.EXPLORE.current_Battle_Screen == null) GameManager.EXPLORE.OpenBattleScreen();
-            if (GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Count < 10 && (!GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().battleStarted))
+            if (!isBoss)
+            { 
+                if (GameManager.EXPLORE.current_Battle_Screen == null) GameManager.EXPLORE.OpenBattleScreen();
+                if (GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Count < 10 && (!GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().battleStarted))
+                {
+                    inBattle = true;
+                    GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(gameObject); //<--------Adds monster to battle if it is close enough            
+                }
+            }
+            if (isBoss)
             {
+                GameObject _go = null;
+                foreach (GameObject _convo in GameManager.EXPLORE.Convo) if (transform.name == _convo.tag+"(Clone)") _go = Instantiate(_convo, GameManager.EXPLORE.transform);
                 inBattle = true;
-                GameManager.EXPLORE.current_Battle_Screen.GetComponent<BattleScreenController>().enemy.Add(gameObject); //<--------Adds monster to battle if it is close enough            
+                if (transform.name == "Zeldulee(Clone)") _go.GetComponent<ZelduleeConvoController>().ref_Zeldulee = gameObject;
             }
         }
     }

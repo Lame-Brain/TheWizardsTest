@@ -29,6 +29,9 @@ TagManager:
   - Waypoint
   - MobSpawner
   - donotdestroy
+  - Melech
+  - Tromuu
+  - Zeldulee
   layers:
   - Default
   - TransparentFX

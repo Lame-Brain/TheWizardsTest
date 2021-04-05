@@ -541,6 +541,7 @@ MonoBehaviour:
   maxDamage: 100
   defenseValue: 15
   xpValue: 4000
+  isBoss: 1
   ambience: {fileID: 0}
   hit: {fileID: 0}
   attack: {fileID: 0}

@@ -172,8 +172,11 @@ public class BattleScreenController : MonoBehaviour
                     List<GameObject> _targetlist = new List<GameObject>();
                     for (int _i = 0; _i < 4; _i++)
                     {
-                        _targetlist.Add(GameManager.PARTY.PC[_i].gameObject);
-                        if (GameManager.PARTY.PC[_i].frontLine) _targetlist.Add(GameManager.PARTY.PC[_i].gameObject); //Add the player twice if they are Frontline
+                        if (GameManager.PARTY.PC[_i].GetComponent<Character>().wounds < GameManager.PARTY.PC[_i].GetComponent<Character>().health)
+                        {
+                            _targetlist.Add(GameManager.PARTY.PC[_i].gameObject);
+                            if (GameManager.PARTY.PC[_i].frontLine) _targetlist.Add(GameManager.PARTY.PC[_i].gameObject); //Add the player twice if they are Frontline
+                        }
                     }
                     //      >>Pick a random target from targetList
                     int _random = Random.Range(0, _targetlist.Count);
