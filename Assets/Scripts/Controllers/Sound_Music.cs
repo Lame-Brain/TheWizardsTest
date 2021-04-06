@@ -96,6 +96,7 @@ public class Sound_Music : MonoBehaviour
     {
         if (!battleMusicLoaded)
         {
+            battleMusicLoaded = true;
             current_ambience.Pause();
             current_music.Pause();
             StartCoroutine(_FadeInAudioSource(_as));

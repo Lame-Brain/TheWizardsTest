@@ -36,6 +36,7 @@ TagManager:
   - Music
   - Dialogue
   - AmbientSFX
+  - MapStairs
   layers:
   - Default
   - TransparentFX
@@ -45,7 +46,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - ROCK
   - 
   - 
   - 

@@ -36,6 +36,7 @@ public class BattleScreenController : MonoBehaviour
         {
             go = Instantiate(ref_monsterPanelPF, ref_MPF.transform);
             enemySlot.Add(go);
+            enemy[_i].transform.Find("MonsterAmbient").GetComponent<AudioSource>().Stop();
         }
         GameManager.GAME.BattleSound.Play();
         UpdatePlayerGUI();
