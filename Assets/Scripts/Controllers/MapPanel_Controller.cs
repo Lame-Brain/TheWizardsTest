@@ -7,7 +7,7 @@ public class MapPanel_Controller : MonoBehaviour
 {
     public GameObject ref_mapPanel;
     public GameObject ref_mapTileEmptyPF, ref_tileImage, ref_darkImage;
-    public Sprite ref_emptyTile, ref_drawnTile, ref_damageTile, ref_darkTile, ref_chestTile, ref_inWall, ref_exWall, ref_doorWall, ref_torchWall, ref_player, ref_arrowUp, ref_arrowDown;
+    public Sprite ref_emptyTile, ref_drawnTile, ref_damageTile, ref_darkTile, ref_chestTile, ref_inWall, ref_exWall, ref_doorWall, ref_torchWall, ref_player, ref_arrowUp, ref_arrowDown, ref_arrowOver;
 
     private GameObject[,] maptile;
     private int n = 5;
@@ -174,6 +174,13 @@ public class MapPanel_Controller : MonoBehaviour
                         _tgo = Instantiate(ref_tileImage, maptile[x + n, y + n].transform);
                         _tgo.name = "Go Up";
                         _tgo.GetComponent<Image>().sprite = ref_arrowDown;
+                    }
+                    //Draw map stairs arrow Over
+                    if (GameManager.PARTY.ladder[_px + x, _py + y] == 3)
+                    {
+                        _tgo = Instantiate(ref_tileImage, maptile[x + n, y + n].transform);
+                        _tgo.name = "Go Up";
+                        _tgo.GetComponent<Image>().sprite = ref_arrowOver;
                     }
 
                     if (_px+x == playerX && _py+y == playerY)

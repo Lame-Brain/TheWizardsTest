@@ -495,7 +495,7 @@ public class PartyController : MonoBehaviour
                 Interact_Object = rcHit.transform.gameObject;                
                 if (Interact_Object.name == "Ladder_down") _result = GameManager.GAME.Icons[32];
                 if (Interact_Object.name == "Ladder_up") _result = GameManager.GAME.Icons[33];
-                if (Interact_Object.name == "Door_up") _result = GameManager.GAME.Icons[33];
+                if (Interact_Object.name == "Door_out")  _result = GameManager.GAME.Icons[33];
 
             }
             if (rcHit.transform.tag == "Signage")
@@ -601,6 +601,7 @@ public class PartyController : MonoBehaviour
             int x = (int)((lad.transform.position.x) / GameManager.RULES.TileSize)+1, y = (int)((lad.transform.position.z + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
             int dir = 1;
             if (lad.transform.position.y > 10) dir = 2;
+            if (lad.transform.position.y < -10) dir = 3;
             ladder[x, y] = dir;
         }
         for (int y_ = 0; y_ < 18; y_++)

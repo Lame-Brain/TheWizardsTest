@@ -498,13 +498,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93b57bf4afd8594893838ab42b0a46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ref_mobPF: {fileID: 0}
-  ref_AssignedWaypointCluster: []
-  minTimeToSpawn: 0
-  maxTimeToSpawn: 0
-  MaxNumberOfSpawns: 0
-  startingNumberOfSpawns: 0
-  offsetRadius: 0
+  ref_mobPF: {fileID: 8878300988336683129, guid: 6040974fca12de3488dfe914f61d2118,
+    type: 3}
+  ref_AssignedWaypointCluster:
+  - {fileID: 76738607}
+  minTimeToSpawn: 25
+  maxTimeToSpawn: 250
+  MaxNumberOfSpawns: 25
+  startingNumberOfSpawns: 3
+  offsetRadius: 6
   wanderingMonster_MinPackSize: 0
   wanderingMonster_MaxPackSize: 0
   WanderingMonster_Frequency: 0
@@ -520,13 +522,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93b57bf4afd8594893838ab42b0a46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ref_mobPF: {fileID: 0}
-  ref_AssignedWaypointCluster: []
-  minTimeToSpawn: 0
-  maxTimeToSpawn: 0
-  MaxNumberOfSpawns: 0
-  startingNumberOfSpawns: 0
-  offsetRadius: 0
+  ref_mobPF: {fileID: 2971538087691505707, guid: 927d248b12a0db94c8649f17e7e15719,
+    type: 3}
+  ref_AssignedWaypointCluster:
+  - {fileID: 76738607}
+  minTimeToSpawn: 25
+  maxTimeToSpawn: 250
+  MaxNumberOfSpawns: 25
+  startingNumberOfSpawns: 3
+  offsetRadius: 6
   wanderingMonster_MinPackSize: 0
   wanderingMonster_MaxPackSize: 0
   WanderingMonster_Frequency: 0
@@ -871,6 +875,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2980443790419523654, guid: 679e6201bf63b8249b169c765324d3ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2980443791893985251, guid: 679e6201bf63b8249b169c765324d3ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7007762218652243660, guid: 679e6201bf63b8249b169c765324d3ce,
         type: 3}
       propertyPath: m_RootOrder
@@ -945,13 +959,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93b57bf4afd8594893838ab42b0a46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ref_mobPF: {fileID: 0}
-  ref_AssignedWaypointCluster: []
-  minTimeToSpawn: 0
-  maxTimeToSpawn: 0
-  MaxNumberOfSpawns: 0
-  startingNumberOfSpawns: 0
-  offsetRadius: 0
+  ref_mobPF: {fileID: 7010428420179524910, guid: ad1347f6c40fb5c429b831381ca5bce4,
+    type: 3}
+  ref_AssignedWaypointCluster:
+  - {fileID: 76738607}
+  minTimeToSpawn: 25
+  maxTimeToSpawn: 250
+  MaxNumberOfSpawns: 25
+  startingNumberOfSpawns: 3
+  offsetRadius: 6
   wanderingMonster_MinPackSize: 0
   wanderingMonster_MaxPackSize: 0
   WanderingMonster_Frequency: 0

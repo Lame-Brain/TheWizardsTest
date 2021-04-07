@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8ce1e7f90d9fd5f4bbe1eaae718f1c6c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2274,8 +2274,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555254084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27, y: 1, z: 27}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 69, y: 1, z: 93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1768290526}
@@ -2294,7 +2294,7 @@ Transform:
   - {fileID: 500471755}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!95 &555254086
 Animator:
   serializedVersion: 3
@@ -3221,6 +3221,7 @@ MonoBehaviour:
   - {fileID: -6931339683150358059, guid: 7d950490dbc3acf48a5b76700526f2f0, type: 3}
   - {fileID: -6662812116773042688, guid: 56f956abade68794ab7cfcfc358295c5, type: 3}
   - {fileID: -4346244404228752641, guid: 56f956abade68794ab7cfcfc358295c5, type: 3}
+  - {fileID: -2292719611878453243, guid: 56f956abade68794ab7cfcfc358295c5, type: 3}
   DungeonColorTextures:
   - {fileID: 2100000, guid: ed61c764cac82844884125bf78853568, type: 2}
   - {fileID: 2100000, guid: 49d024d376bae88498f89e9da8d77124, type: 2}

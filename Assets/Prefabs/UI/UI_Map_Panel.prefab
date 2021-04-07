@@ -756,6 +756,8 @@ MonoBehaviour:
     type: 3}
   ref_arrowDown: {fileID: -6662812116773042688, guid: 56f956abade68794ab7cfcfc358295c5,
     type: 3}
+  ref_arrowOver: {fileID: -2292719611878453243, guid: 56f956abade68794ab7cfcfc358295c5,
+    type: 3}
 --- !u!1 &963983015906117010
 GameObject:
   m_ObjectHideFlags: 0

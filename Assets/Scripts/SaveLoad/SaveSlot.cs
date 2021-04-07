@@ -432,7 +432,9 @@ public class SaveSlot
         if (!GameManager.PARTY.partyIsDead)
         {
             for (int _y = 0; _y < 18; _y++)
-                for (int _x = 0; _x < 18; _x++) s.scene_List[c].MiniMapData[_y * 18 + _x] = p.showMapTile[_x, _y]; //turns 2D array into a 1D array for serialization
+            {                
+                for (int _x = 0; _x < 18; _x++) s.scene_List[c-1].MiniMapData[_y * 18 + _x] = p.showMapTile[_x, _y]; //turns 2D array into a 1D array for serialization
+            }
         }
 //        if(!GameManager.PARTY.partyIsDead) s.scene_List[c].MiniMapData.Insert(0, new MiniMapData(p.map, p.mapN, p.mapE, p.mapS, p.mapW, p.mapND, p.mapED, p.mapSD, p.mapWD, p.mapNT, p.mapET, p.mapST, p.mapWT, p.mapC));
     }
