@@ -165,8 +165,8 @@ public class PartyController : MonoBehaviour
         }
     }
 
-    private void BuildMapVisibility()
-    {
+    public void BuildMapVisibility()
+    {        
         if(light > 0)
         {
             int x_ = (int)((x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), y_ = (int)((y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
@@ -174,11 +174,16 @@ public class PartyController : MonoBehaviour
             for (int _y = -1; _y < 1; _y++)
                 for (int _x = -1; _x < 1; _x++)
                 {
-                    if (ladder[_x, _y] > 0) showMapTile[_x, _y] = true;
+                    if (_x + x_ > 0 && _x + x_ < 18 && _y + y_ > 0 && _y + y_ < 18)
+                        if (ladder[_x + x_, _y + y_] > 0)
+                        {
+                            showMapTile[_x + x_, _y + y_] = true;
+                            map[_x + x_, _y + y_] = 1;
+                        }
                 }
         }
     }
-    private void BuildMapData()
+/*    private void BuildMapData()
     {
         if (light > 0)
         {
@@ -223,6 +228,7 @@ public class PartyController : MonoBehaviour
             if (_go.GetComponent<GridNode>().trapDark) map[x_, y_] = 3;
         }
     }
+*/
 
     private void LookfoMovementInput()
     {
@@ -353,7 +359,7 @@ public class PartyController : MonoBehaviour
         if (transform.rotation.eulerAngles.y >= 45 && transform.rotation.eulerAngles.y <= 135) face = 3; //Face West
         //Reset moveTarget and lookTarget
         moveTarget = FindMyNode().transform;
-        lookTarget = FaceMyTarget(FindMyNode(), face);
+        lookTarget = FaceMyTarget(FindMyNode(), face);        
     }
 
     public void LoadParty(SaveSlot.serialParty p) //**************************************************************************************************************<<<<<
@@ -372,7 +378,7 @@ public class PartyController : MonoBehaviour
         }
             
 
-        x_coor = p.x_coor; y_coor = p.y_coor; face = p.face;
+        x_coor = p.x_coor; y_coor = p.y_coor; face = p.face;        
         transform.position = new Vector3(x_coor, 1, y_coor); Debug.Log("Party repositioned to: "+transform.position);
         transform.rotation = FaceMyTarget(FindMyNode(), face).rotation;
         moveTarget = FindMyNode().transform;
@@ -381,26 +387,12 @@ public class PartyController : MonoBehaviour
         transform.Find("Canvas").GetComponentInChildren<Image>().color = new Color(1, 0, 0, 0);
     }
 
-    public void LoadMiniMap(int[] mapCenter, int[] mapNorth, int[] mapEast, int[] mapSouth, int[]mapWest, bool[] doorNorth, bool[] doorEast, bool[] doorSouth, bool[] doorWest, bool[] trapNorth, bool[] trapEast, bool[] trapSouth, bool[] trapWest, bool[] chest)
-    {
-
+    public void LoadMiniMap(bool[] _SMT)
+    {        
         for (int y = 0; y < 18; y++)
             for(int x = 0; x < 18; x++)
             {
-                map[x, y] = mapCenter[y * 18 + x];
-                mapN[x, y] = mapNorth[y * 18 + x];
-                mapE[x, y] = mapEast[y * 18 + x];
-                mapS[x, y] = mapSouth[y * 18 + x];
-                mapW[x, y] = mapWest[y * 18 + x];
-                mapND[x, y] = doorNorth[y * 18 + x];
-                mapED[x, y] = doorEast[y * 18 + x];
-                mapSD[x, y] = doorSouth[y * 18 + x];
-                mapWD[x, y] = doorWest[y * 18 + x];
-                mapNT[x, y] = trapNorth[y * 18 + x];
-                mapET[x, y] = trapEast[y * 18 + x];
-                mapST[x, y] = trapSouth[y * 18 + x];
-                mapWT[x, y] = trapWest[y * 18 + x];
-                mapC[x, y] = chest[y * 18 + x];
+                showMapTile[x, y] = _SMT[y * 18 + x];
             }
     }
 

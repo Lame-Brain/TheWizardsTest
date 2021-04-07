@@ -127,10 +127,10 @@ public class Sound_Music : MonoBehaviour
         volumeLimit_Dialogue = 1f;
 
         //Limit Sound volume
-        foreach (AudioSource _as in allSFX) if (_as.volume > volumeLimit_SFX) _as.volume = volumeLimit_SFX;
-        foreach (AudioSource _as in allMusic) if (_as.volume > volumeLimit_Music) _as.volume = volumeLimit_Music;
-        foreach (AudioSource _as in allAmbientSFX) if (_as.volume > volumeLimit_Ambience) _as.volume = volumeLimit_Ambience;
-        foreach (AudioSource _as in allDialogue) if (_as.volume > volumeLimit_Dialogue) _as.volume = volumeLimit_Dialogue;
+        foreach (AudioSource _as in allSFX) if (_as != null && _as.volume > volumeLimit_SFX) _as.volume = volumeLimit_SFX;
+        foreach (AudioSource _as in allMusic) if (_as != null && _as.volume > volumeLimit_Music) _as.volume = volumeLimit_Music;
+        foreach (AudioSource _as in allAmbientSFX) if (_as != null && _as.volume > volumeLimit_Ambience) _as.volume = volumeLimit_Ambience;
+        foreach (AudioSource _as in allDialogue) if (_as != null && _as.volume > volumeLimit_Dialogue) _as.volume = volumeLimit_Dialogue;
 
 
         if (Input.GetKeyUp(KeyCode.P))

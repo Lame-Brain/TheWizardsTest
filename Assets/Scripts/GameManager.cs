@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LateStart(1.5f));
+        StartCoroutine(LateStart(.1f));
     }
     IEnumerator LateStart(float n)
     {

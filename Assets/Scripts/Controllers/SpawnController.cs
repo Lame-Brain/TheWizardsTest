@@ -22,8 +22,9 @@ public class SpawnController : MonoBehaviour
     }
 
     private void SpawnMob()
-    {         
-        if((transform.childCount - 1) < MaxNumberOfSpawns && (Vector3.Distance(transform.position, player.transform.position) > 15f)) //Wont Spawn if the player is too close, or there are too many spawns already
+    {
+        //if((transform.childCount - 1) < MaxNumberOfSpawns && (Vector3.Distance(transform.position, player.transform.position) < 6f)) //Wont Spawn if the player is too close, or there are too many spawns already (this didn't work out, I will investigate later)
+        if ((transform.childCount - 1) < MaxNumberOfSpawns) //Wont Spawn if there are too many spawns already
             Instantiate(ref_mobPF, new Vector3(transform.position.x + Random.Range(0f, offsetRadius), 1f, transform.position.z + Random.Range(0f, offsetRadius)), Quaternion.identity, transform);
     }
     private void SetAlarm()
@@ -46,7 +47,7 @@ public class SpawnController : MonoBehaviour
     {
         //Clear existing mobs
         GameObject[] _allMobs = GameObject.FindGameObjectsWithTag("Mob");
-        foreach (GameObject _mob in _allMobs) Destroy(_mob);
+        foreach (GameObject _mob in _allMobs) if(_mob.transform.IsChildOf(transform))Destroy(_mob);
 
         GameObject _thismob;
         GameObject[] _allWaypoints = GameObject.FindGameObjectsWithTag("Waypoint");

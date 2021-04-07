@@ -15,7 +15,7 @@ public class MapController : MonoBehaviour
             cm.color = levelColor;
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("EditorOnly")) go.SetActive(false);
 
-        StartCoroutine(LateStart(0.5f));
+        StartCoroutine(LateStart(.15f));
 
     }
 
@@ -25,5 +25,6 @@ public class MapController : MonoBehaviour
         //Load map from saved file        
         Debug.Log("Load Mini Map Info for Save Slot #"+ GameManager.GAME.SelectedSaveSlot+", map " + UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         SaveLoadModule.save_slot[GameManager.GAME.SelectedSaveSlot].GetMiniMap(SaveLoadModule.save_slot[GameManager.GAME.SelectedSaveSlot], UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        GameManager.PARTY.BuildMapVisibility();
     }
 }

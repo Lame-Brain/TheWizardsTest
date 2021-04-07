@@ -10,7 +10,7 @@ public class BattleScreenController : MonoBehaviour
 {
     public GameObject[] pcSlot;
     public List<GameObject> enemy, enemySlot;
-    public GameObject ref_OutputPanel, ref_monsterPanelPF, ref_MPF, ref_InfoBox;
+    public GameObject ref_OutputPanel, ref_monsterPanelPF, ref_MPF, ref_CancelActionButton;
     public Text ref_OutputText;    
     public Sprite ref_AggStanceIcon, ref_DefStanceIcon;
     public bool battleStarted;
@@ -29,6 +29,7 @@ public class BattleScreenController : MonoBehaviour
         battleStarted = false;
         enemySlot = new List<GameObject>();
         StartCoroutine("DelayStart", 1f);
+        ref_CancelActionButton.SetActive(false);
     }
     IEnumerator DelayStart(float n)
     {
@@ -165,7 +166,7 @@ public class BattleScreenController : MonoBehaviour
             if (BattleStep == "Enemy Turn")
             {
                 WaitforNextStep = true;
-                ref_InfoBox.SetActive(false);
+//              ref_InfoBox.SetActive(false);
                 enemySlot[iniativeOrder[0].GetComponent<MonsterLogic>().BS_Slot].transform.Find("Hilight").gameObject.SetActive(true);
                 if (iniativeOrder[0].GetComponent<MonsterLogic>().wounds < iniativeOrder[0].GetComponent<MonsterLogic>().health) //check if the enemy is not dead
                 {
@@ -208,9 +209,7 @@ public class BattleScreenController : MonoBehaviour
 
                 if (iniativeOrder[0].GetComponent<Character>().wounds < iniativeOrder[0].GetComponent<Character>().health) //check if the Hero is dead
                 {
-                    ref_InfoBox.SetActive(true);
-                    ref_OutputPanel.SetActive(false);
-                    ref_InfoBox.GetComponentInChildren<Text>().text = iniativeOrder[0].GetComponent<Character>().characterName + "'s turn:";
+                    StartCoroutine(DisplayMessageThenHideOutputPanel(iniativeOrder[0].GetComponent<Character>().characterName + "'s turn:"));
 
                     //Update Attack Buttons
                     int _i = iniativeOrder[0].transform.GetSiblingIndex();
@@ -251,7 +250,9 @@ public class BattleScreenController : MonoBehaviour
         }
         if (BattleStep == "Wait for Right Target" || BattleStep == "Wait for Left Target" || BattleStep == "Wait for Spell Target")
         {
-            ref_InfoBox.GetComponentInChildren<Text>().text = "Choose a target:";
+//            ref_InfoBox.GetComponentInChildren<Text>().text = "Choose a target:";
+            ref_CancelActionButton.SetActive(true);
+            ref_OutputPanel.SetActive(true); ref_OutputText.text = "Choose Target";
             int _trgt = -1;
             if (buttonPushed.Contains("Monster"))
             {
@@ -265,11 +266,14 @@ public class BattleScreenController : MonoBehaviour
                 if (buttonPushed.Substring(buttonPushed.Length - 1) == "8") _trgt = 7;
                 if (buttonPushed.Substring(buttonPushed.Length - 1) == "9") _trgt = 8;
                 if (buttonPushed.Substring(buttonPushed.Length - 1) == "0") _trgt = 9;
+                ref_CancelActionButton.SetActive(false);
             }
             if (buttonPushed != "") buttonPushed = ""; //Reset which button has been pushed
             if(_trgt > -1) //RESOLVE PENDING ATTACK
             {
+                ref_CancelActionButton.SetActive(false);
                 GameObject _target = enemy[_trgt];
+                Debug.Log("attacking " + _target.name + ", the " + _target.tag);
                 int _damage = 0, _attack = (int)(iniativeOrder[0].GetComponent<Character>().attack + Random.Range(0, GameManager.RULES.RandomRange));
                 if (BattleStep == "Wait for Right Target") _damage = Random.Range(iniativeOrder[0].GetComponent<Character>().eq_RightHand.minDamage, iniativeOrder[0].GetComponent<Character>().eq_RightHand.maxDamage) + (iniativeOrder[0].GetComponent<Character>().strength / 2) - 4;
                 if (BattleStep == "Wait for Left Target") _damage = Random.Range(iniativeOrder[0].GetComponent<Character>().eq_LeftHand.minDamage, iniativeOrder[0].GetComponent<Character>().eq_LeftHand.maxDamage) + (iniativeOrder[0].GetComponent<Character>().strength / 2) - 4;
@@ -307,6 +311,19 @@ public class BattleScreenController : MonoBehaviour
 
     }
 
+    IEnumerator DisplayMessageThenHideOutputPanel(string message)
+    {
+        ref_OutputPanel.SetActive(true);
+        ref_OutputText.text = message;
+        //Pause
+        for (float timer = GameManager.RULES.messageDelay; timer >= 0; timer -= Time.deltaTime)
+        {
+            if (Input.GetButtonUp("Submit")) timer = 0;
+            yield return null;
+        }
+        ref_OutputPanel.SetActive(false);
+    }
+
     IEnumerator ResolveTurn(GameObject _actor, string message)
     {
         ref_OutputPanel.SetActive(true);
@@ -338,6 +355,7 @@ public class BattleScreenController : MonoBehaviour
     IEnumerator ResolveTurn(GameObject _attacker, GameObject _defender, int _attack, int _damage, int _defense)
     {
         ref_OutputPanel.SetActive(true);
+        ref_OutputText.text = "!!!!!!!!!!!!!!!!!!!!!!";
 
         if (_defender.GetComponent<Character>() != null) //the defender is a hero
         {
@@ -428,5 +446,12 @@ public class BattleScreenController : MonoBehaviour
         UpdateEnemyGUI();
         WaitforNextStep = false; //tell the update loop to beging the next phase
         BattleStep = "Actor Turn"; //point the phase to getting the next person in the iniative order, or rebuilding the iniative order if it is empty
+    }
+
+    public void CancelAction()
+    {
+        ref_CancelActionButton.SetActive(false);
+        BattleStep = "Character Turn";
+        WaitforNextStep = false;
     }
 }
