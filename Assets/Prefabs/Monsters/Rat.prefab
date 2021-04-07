@@ -566,9 +566,9 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: 
   wounds: 0
-  health: 12
+  health: 10
   initBonus: 1
-  bonusToHit: 0
+  bonusToHit: 1
   minDamage: 0
   maxDamage: 4
   defenseValue: 3

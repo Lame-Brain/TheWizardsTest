@@ -356,13 +356,13 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Ettin
   wounds: 0
-  health: 100
+  health: 10
   initBonus: 1
   bonusToHit: 1
-  minDamage: 1
-  maxDamage: 8
-  defenseValue: 1
-  xpValue: 30
+  minDamage: 0
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

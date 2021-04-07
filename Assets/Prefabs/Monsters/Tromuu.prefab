@@ -711,13 +711,13 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: 
   wounds: 0
-  health: 0
-  initBonus: 0
-  bonusToHit: 0
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
   minDamage: 0
-  maxDamage: 0
-  defenseValue: 0
-  xpValue: 0
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

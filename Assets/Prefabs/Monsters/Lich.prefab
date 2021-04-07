@@ -667,13 +667,13 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Lich
   wounds: 0
-  health: 50
-  initBonus: 2
-  bonusToHit: 3
-  minDamage: 25
-  maxDamage: 27
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
+  minDamage: 0
+  maxDamage: 4
   defenseValue: 3
-  xpValue: 40
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

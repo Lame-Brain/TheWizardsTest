@@ -351,13 +351,13 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Zombie
   wounds: 0
-  health: 75
-  initBonus: 3
-  bonusToHit: 4
-  minDamage: 5
-  maxDamage: 6
-  defenseValue: 7
-  xpValue: 35
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
+  minDamage: 0
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

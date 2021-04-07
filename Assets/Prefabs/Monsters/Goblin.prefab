@@ -287,12 +287,12 @@ MonoBehaviour:
   NPC_Name: Goblin
   wounds: 0
   health: 10
-  initBonus: 0
-  bonusToHit: 0
+  initBonus: 1
+  bonusToHit: 1
   minDamage: 0
-  maxDamage: 5
-  defenseValue: 0
-  xpValue: 10
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

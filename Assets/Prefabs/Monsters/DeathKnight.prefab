@@ -356,13 +356,13 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Death Knight
   wounds: 0
-  health: 100
-  initBonus: 5
-  bonusToHit: 5
-  minDamage: 10
-  maxDamage: 25
-  defenseValue: 10
-  xpValue: 50
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
+  minDamage: 0
+  maxDamage: 4
+  defenseValue: 3
+  xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
   hit: {fileID: 0}

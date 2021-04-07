@@ -413,12 +413,12 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Bat
   wounds: 0
-  health: 7
-  initBonus: 3
-  bonusToHit: 2
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
   minDamage: 0
   maxDamage: 4
-  defenseValue: 6
+  defenseValue: 3
   xpValue: 25
   isBoss: 0
   ambience: {fileID: 8727117592039701674}

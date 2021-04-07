@@ -229,12 +229,12 @@ MonoBehaviour:
   wayPoint: {fileID: 0}
   NPC_Name: Skeleton
   wounds: 0
-  health: 38
-  initBonus: 15
-  bonusToHit: 0
+  health: 10
+  initBonus: 1
+  bonusToHit: 1
   minDamage: 0
-  maxDamage: 3
-  defenseValue: 0
+  maxDamage: 4
+  defenseValue: 3
   xpValue: 25
   isBoss: 0
   ambience: {fileID: 0}
