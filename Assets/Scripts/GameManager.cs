@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Tab)) //DEBUG
         {
+            PARTY.DEBUGMAP();
             //UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
             //PARTY.PassTurn();

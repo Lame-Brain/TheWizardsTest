@@ -435,6 +435,7 @@ GameObject:
   - component: {fileID: 1634151317181888240}
   - component: {fileID: 1634151317180888112}
   - component: {fileID: 1634151317176681202}
+  - component: {fileID: 1625151705618211156}
   m_Layer: 0
   m_Name: DungeonSet01_Door02
   m_TagString: MapDoor
@@ -516,6 +517,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24529296, y: 2.4650416, z: 1.6229736}
   m_Center: {x: -0.07731311, y: 1.2325208, z: -0.7748739}
+--- !u!114 &1625151705618211156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634151317183081214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e477660bc6283d64e9526e8a5e577624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpen: 0
+  knownLocked: 0
+  lockValue: 0
+  IconIndex: 0
 --- !u!1 &3752838296084625933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13425,7 +13442,7 @@ GameObject:
   - component: {fileID: 3752838296523399449}
   - component: {fileID: 3752838296523399462}
   m_Layer: 0
-  m_Name: DungeonSet01_Door01
+  m_Name: Door_out
   m_TagString: MapLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111561,7 +111578,7 @@ GameObject:
   - component: {fileID: 4477496081436344317}
   - component: {fileID: 4477496081438332912}
   m_Layer: 0
-  m_Name: DungeonSet01_Door01
+  m_Name: Door_out
   m_TagString: MapLadder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111995,7 +112012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5679863688901060077}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 50, y: 0, z: 74}
+  m_LocalPosition: {x: 50, y: 1, z: 74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3752838297504265090}
@@ -112025,7 +112042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9120235668293152335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51, y: 0, z: 3}
+  m_LocalPosition: {x: 51, y: 1, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3752838297504265090}

@@ -25,6 +25,7 @@ public class PartyController : MonoBehaviour
     public int[,] mapE = new int[18, 18];
     public int[,] mapS = new int[18, 18];
     public int[,] mapW = new int[18, 18];
+    public int[,] ladder = new int[18, 18];
     public bool[,] mapND = new bool[18, 18];
     public bool[,] mapED = new bool[18, 18];
     public bool[,] mapSD = new bool[18, 18];
@@ -34,6 +35,7 @@ public class PartyController : MonoBehaviour
     public bool[,] mapST = new bool[18, 18];
     public bool[,] mapWT = new bool[18, 18];
     public bool[,] mapC= new bool[18, 18];
+    public bool[,] showMapTile = new bool[18, 18];
 
     private bool moving = false, AllowMovement = true;
     public Transform moveTarget, lookTarget;
@@ -55,8 +57,9 @@ public class PartyController : MonoBehaviour
         for (int y = 0; y < 18; y++) //Declare map is blank
             for (int x = 0; x < 18; x++)
             {
-                map[x, y] = 0; mapN[x, y] = 0; mapE[x, y] = 0; mapS[x, y] = 0; mapW[x, y] = 0; mapND[x, y] = false; mapED[x, y] = false; mapWD[x, y] = false; mapSD[x, y] = false;
+                map[x, y] = 0; mapN[x, y] = 0; mapE[x, y] = 0; mapS[x, y] = 0; mapW[x, y] = 0; ladder[x, y] = 0; mapND[x, y] = false; mapED[x, y] = false; mapWD[x, y] = false; mapSD[x, y] = false;
                 mapNT[x, y] = false; mapET[x, y] = false; mapST[x, y] = false; mapWT[x, y] = false; mapC[x, y] = false;
+                showMapTile[x, y] = false;
             }
 
         if (GameManager.PARTY == null) GameManager.PARTY = this;
@@ -160,10 +163,23 @@ public class PartyController : MonoBehaviour
                 GameManager.EXPLORE.ref_MainMenu.SetActive(!GameManager.EXPLORE.ref_MainMenu.activeSelf);
             }
         }
+    }
 
-        CheckForTraps();
-
-        //build map data
+    private void BuildMapVisibility()
+    {
+        if(light > 0)
+        {
+            int x_ = (int)((x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), y_ = (int)((y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
+            showMapTile[x_, y_] = true;
+            for (int _y = -1; _y < 1; _y++)
+                for (int _x = -1; _x < 1; _x++)
+                {
+                    if (ladder[_x, _y] > 0) showMapTile[_x, _y] = true;
+                }
+        }
+    }
+    private void BuildMapData()
+    {
         if (light > 0)
         {
             int x_ = (int)((x_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize), y_ = (int)((y_coor + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
@@ -215,10 +231,11 @@ public class PartyController : MonoBehaviour
             //Moving is true, won't accept commands until it is false.
             moving = true;
             //Set new move target based on GridNode Links
-            if (face == 0 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
-            if (face == 1 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-            if (face == 2 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
-            if (face == 3 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            moveTarget = FindMyNode().transform;
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().northLink != null && NotBlockedForMovement(0)) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().eastLink != null && NotBlockedForMovement(1)) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().southLink != null && NotBlockedForMovement(2)) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().westLink != null && NotBlockedForMovement(3)) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
             //Simplify grid coordinates of nodes based on their world coordinates
             int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
             int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
@@ -232,10 +249,10 @@ public class PartyController : MonoBehaviour
             //Moving is true, won't accept commands until it is false.
             moving = true;
             //Set new move target based on GridNode Links
-            if (face == 0 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-            if (face == 1 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
-            if (face == 2 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
-            if (face == 3 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().eastLink != null && NotBlockedForMovement(1)) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().southLink != null && NotBlockedForMovement(2)) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().westLink != null && NotBlockedForMovement(3)) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().northLink != null && NotBlockedForMovement(0)) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
             //Simplify grid coordinates of nodes based on their world coordinates
             int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
             int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
@@ -249,10 +266,10 @@ public class PartyController : MonoBehaviour
             //Moving is true, won't accept commands until it is false.
             moving = true;
             //Set new move target based on GridNode Links
-            if (face == 0 && FindMyNode().GetComponent<GridNode>().westLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
-            if (face == 1 && FindMyNode().GetComponent<GridNode>().northLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
-            if (face == 2 && FindMyNode().GetComponent<GridNode>().eastLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
-            if (face == 3 && FindMyNode().GetComponent<GridNode>().southLink != null) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
+            if (face == 0 && FindMyNode().GetComponent<GridNode>().westLink != null && NotBlockedForMovement(3)) moveTarget = FindMyNode().GetComponent<GridNode>().westLink.transform;
+            if (face == 1 && FindMyNode().GetComponent<GridNode>().northLink != null && NotBlockedForMovement(0)) moveTarget = FindMyNode().GetComponent<GridNode>().northLink.transform;
+            if (face == 2 && FindMyNode().GetComponent<GridNode>().eastLink != null && NotBlockedForMovement(1)) moveTarget = FindMyNode().GetComponent<GridNode>().eastLink.transform;
+            if (face == 3 && FindMyNode().GetComponent<GridNode>().southLink != null && NotBlockedForMovement(2)) moveTarget = FindMyNode().GetComponent<GridNode>().southLink.transform;
             //Simplify grid coordinates of nodes based on their world coordinates
             int _x = (int)(moveTarget.position.x + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
             int _y = (int)(moveTarget.position.z + (GameManager.RULES.TileSize / 2) / GameManager.RULES.TileSize);
@@ -297,12 +314,11 @@ public class PartyController : MonoBehaviour
             yield return null;
         }
         moving = false;
-//        LookfoMovementInput();
-//        if (!moving)
-        {
-            transform.position = moveTarget.position; //"Snap" party to target location
-            transform.LookAt(lookTarget.position); //"Snap" party to rotation            
-        }
+        transform.position = moveTarget.position; //"Snap" party to target location
+        transform.LookAt(lookTarget.position); //"Snap" party to rotation            
+        CheckForTraps();
+        //BuildMapData();
+        BuildMapVisibility();
     }
 
     IEnumerator PlayFootSteps()
@@ -316,6 +332,7 @@ public class PartyController : MonoBehaviour
 
     public void TeleportToDungeonStart(string destination)
     {
+        DEBUGMAP();
         //Debug.Log("Teleporting to the beginning in " + SceneManager.GetActiveScene().buildIndex);
         actionQueue = ""; //Clear the action queue
 
@@ -486,6 +503,7 @@ public class PartyController : MonoBehaviour
                 Interact_Object = rcHit.transform.gameObject;                
                 if (Interact_Object.name == "Ladder_down") _result = GameManager.GAME.Icons[32];
                 if (Interact_Object.name == "Ladder_up") _result = GameManager.GAME.Icons[33];
+                if (Interact_Object.name == "Door_up") _result = GameManager.GAME.Icons[33];
 
             }
             if (rcHit.transform.tag == "Signage")
@@ -579,5 +597,62 @@ public class PartyController : MonoBehaviour
         deathAnimation.enabled = false;
         deathAnimation.SetBool("isDead", false);
         SceneManager.LoadScene("DefeatScreen");
+    }
+
+
+
+    public void DEBUGMAP()
+    {
+        GameObject _go;
+        foreach(GameObject lad in GameObject.FindGameObjectsWithTag("MapStairs"))
+        {
+            int x = (int)((lad.transform.position.x) / GameManager.RULES.TileSize)+1, y = (int)((lad.transform.position.z + (GameManager.RULES.TileSize / 2)) / GameManager.RULES.TileSize);
+            int dir = 1;
+            if (lad.transform.position.y > 10) dir = 2;
+            ladder[x, y] = dir;
+        }
+        for (int y_ = 0; y_ < 18; y_++)
+            for(int x_ = 0; x_ < 18; x_++)
+            {
+                _go = FindNode(x_, y_);
+                if (_go != null) {
+                    if (_go.GetComponent<GridNode>().northChest || _go.GetComponent<GridNode>().eastChest || _go.GetComponent<GridNode>().southChest || _go.GetComponent<GridNode>().westChest) mapC[x_, y_] = true;
+                    if (_go.GetComponent<GridNode>().northLink == null) //Wall to the north
+                    {
+                        mapN[x_, y_] = 2; //Interior Wall
+                        //if (FindNode(x_, y_ - 1) == null) mapN[x_, y_] = 1; //Exterior Wall
+                    }
+                    if (_go.GetComponent<GridNode>().northDoor) mapND[x_, y_] = true; //North Door 
+                    if (_go.GetComponent<GridNode>().northTorch) mapNT[x_, y_] = true; //North Torch 
+
+                    if (_go.GetComponent<GridNode>().eastLink == null) //Wall to the east
+                    {
+                        mapE[x_, y_] = 2; //Interior Wall
+                        //if (FindNode(x_ - 1, y_) == null) mapE[x_, y_] = 1; //Exterior Wall
+                    }
+                    if (_go.GetComponent<GridNode>().eastDoor) mapED[x_, y_] = true; //East Door 
+                    if (_go.GetComponent<GridNode>().eastTorch) mapET[x_, y_] = true; //East Torch
+
+                    if (_go.GetComponent<GridNode>().southLink == null) //Wall to the south
+                    {
+                        mapS[x_, y_] = 2; //Interior Wall
+                        //if (FindNode(x_, y_ + 1) == null) mapS[x_, y_] = 1; //Exterior Wall
+                    }
+                    if (_go.GetComponent<GridNode>().southDoor) mapSD[x_, y_] = true; //South Door 
+                    if (_go.GetComponent<GridNode>().southTorch) mapST[x_, y_] = true; //South Torch
+
+                    if (_go.GetComponent<GridNode>().westLink == null) //Wall to the west
+                    {
+                        mapW[x_, y_] = 2; //Interior Wall
+                        //if (FindNode(x_ + 1, y_) == null) mapW[x_, y_] = 1; //Exterior Wall
+                    }
+                    if (_go.GetComponent<GridNode>().westDoor) mapWD[x_, y_] = true; //West Door 
+                    if (_go.GetComponent<GridNode>().westTorch) mapWT[x_, y_] = true; //West Torch
+
+                    if (_go.GetComponent<GridNode>().trapDamage == 0) map[x_, y_] = 1;//Floor
+                    if (_go.GetComponent<GridNode>().trapDamage != 0) map[x_, y_] = 2;
+                    if (_go.GetComponent<GridNode>().trapDark) map[x_, y_] = 3;
+                }
+            } 
     }
 }

@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 6941975568683865928}
   m_Layer: 0
   m_Name: Tromuu
-  m_TagString: Untagged
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

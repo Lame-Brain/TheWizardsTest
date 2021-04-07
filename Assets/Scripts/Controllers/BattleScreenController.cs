@@ -23,6 +23,9 @@ public class BattleScreenController : MonoBehaviour
             
     private void Start()
     {
+        //Silence all mob ambient noise
+        foreach(GameObject _go in GameObject.FindGameObjectsWithTag("Mob")) _go.transform.Find("MonsterAmbient").GetComponent<AudioSource>().Stop();
+
         battleStarted = false;
         enemySlot = new List<GameObject>();
         StartCoroutine("DelayStart", 1f);
@@ -35,8 +38,7 @@ public class BattleScreenController : MonoBehaviour
         for (int _i = 0; _i < enemy.Count; _i++)
         {
             go = Instantiate(ref_monsterPanelPF, ref_MPF.transform);
-            enemySlot.Add(go);
-            enemy[_i].transform.Find("MonsterAmbient").GetComponent<AudioSource>().Stop();
+            enemySlot.Add(go);            
         }
         GameManager.GAME.BattleSound.Play();
         UpdatePlayerGUI();
@@ -299,6 +301,9 @@ public class BattleScreenController : MonoBehaviour
         GameManager.EXPLORE.DrawExplorerUI();
         GameManager.PARTY.SetAllowedMovement(true);
         GameManager.PARTY.ref_BGM.StopBattleMusic();
+        //turn all mob ambient noise back on
+        foreach (GameObject _go in GameObject.FindGameObjectsWithTag("Mob")) _go.transform.Find("MonsterAmbient").GetComponent<AudioSource>().Play();
+
 
     }
 
