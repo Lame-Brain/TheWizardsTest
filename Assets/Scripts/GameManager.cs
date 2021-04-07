@@ -43,9 +43,11 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(n);
         //Debug settings
-        SelectedSaveSlot = 0;
+        //SelectedSaveSlot = 0;
         PARTY.ref_BGM.GetLevelBGM(SceneManager.GetActiveScene().buildIndex);
-        SaveLoadModule.InitSave(SelectedSaveSlot);
+        SaveLoadModule.InitSave(0);
+        SaveLoadModule.InitSave(1);
+        SaveLoadModule.InitSave(2);
     }
 
     // Update is called once per frame

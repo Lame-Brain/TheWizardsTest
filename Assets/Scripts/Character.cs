@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] public enum characterClass { monster, Fighter, Rogue, Mage, Cleric}
+    [SerializeField] public enum characterClass { Class, Fighter, Rogue, Mage, Cleric}
     public string characterName;
     public characterClass type;
     public int xpLevel, xpPoints, xpNNL, freePoints;

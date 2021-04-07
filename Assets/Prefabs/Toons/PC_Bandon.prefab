@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8921148416882880798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4839871467039300364}
+  - component: {fileID: 6224834850533743299}
+  m_Layer: 0
+  m_Name: PC (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4839871467039300364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921148416882880798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6224834850533743299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921148416882880798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b73e6f8361d4974e87ebe2e01ddbf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Bandon
+  type: 4
+  xpLevel: 1
+  xpPoints: 750
+  xpNNL: 500
+  freePoints: 0
+  base_str: 14
+  base_dex: 10
+  base_iq: 10
+  base_wis: 18
+  base_cha: 16
+  base_health: 10
+  wounds: 0
+  base_mana: 10
+  drain: 0
+  defense: 0
+  attack: 0.5
+  BS_Slot: 0
+  strength: 10
+  dexterity: 6
+  intelligence: 6
+  wisdom: 16
+  charisma: 8
+  health: 10
+  mana: 10
+  portraitIndex: 36
+  eq_Head: {fileID: 11400000, guid: 51778e2bf2741534b86d373884119ed7, type: 2}
+  eq_Neck: {fileID: 11400000, guid: a8ded2198858ae84099d82ec341a4434, type: 2}
+  eq_LeftFinger: {fileID: 11400000, guid: 1d6a6a34e7557aa4893729580823de97, type: 2}
+  eq_RightFinger: {fileID: 0}
+  eq_LeftHand: {fileID: 0}
+  eq_RightHand: {fileID: 11400000, guid: 8a411cab62bdf854f803b00da493a334, type: 2}
+  eq_Torso: {fileID: 11400000, guid: 17d3f82f39442334fba52ee018ad9d4b, type: 2}
+  eq_Legs: {fileID: 11400000, guid: d486d22b93bb68b458f76d1b76c66566, type: 2}
+  eq_Feet: {fileID: 11400000, guid: 5461c15ef9e78724b963d5e1518cf0ad, type: 2}
+  frontLine: 1
+  asleep: 0
+  poisoned: 0
+  regen: 0
+  paralyzed: 0
+  cursed: 0
+  blessed: 0
+  strMod: 0
+  dexMod: 0
+  intMod: 0
+  wisMod: 0
+  chaMod: 0
+  healthMod: 0
+  manaMod: 0
